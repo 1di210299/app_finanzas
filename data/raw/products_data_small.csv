@@ -1,16 +1,16 @@
 product_code,product_name,category,subcategory,brand,unit_price,cost_price,weight_kg,dimensions,stock_quantity,supplier,created_date,status
-PROD0001,Premium Fiction 4512,Books,Fiction,PremiumCo,187.05,131.71,13.923,96x48x57cm,669,Supplier_4,2024-07-16,ACTIVE
-PROD0002,Basic Tools 2351,Home,Tools,GlobalBrand,517.94,295.24,49.614,27x33x11cm,311,Supplier_7,2024-04-10,DISCONTINUED
-PROD0003,Max Fiction 6885,Books,Fiction,GlobalBrand,628.93,287.73,12.848,100x85x65cm,515,Supplier_9,2025-05-03,OUT_OF_STOCK
-PROD0004,Ultra Garden 1669,Home,Garden,LocalMaker,1400.82,936.02,47.823,65x14x51cm,306,Supplier_12,2024-04-08,DISCONTINUED
-PROD0005,Standard Fiction 4172,Books,Fiction,GlobalBrand,301.79,202.74,9.558,78x41x20cm,964,Supplier_2,2024-01-28,DISCONTINUED
-PROD0006,Elite Educational 3565,Books,Educational,LocalMaker,1311.66,645.81,3.088,46x68x97cm,130,Supplier_20,2024-07-19,OUT_OF_STOCK
-PROD0007,Pro Accessories 6949,Clothing,Accessories,PremiumCo,770.31,522.75,40.942,76x93x85cm,72,Supplier_17,2025-03-02,DISCONTINUED
-PROD0008,Ultra Team Sports 4149,Sports,Team Sports,LocalMaker,908.35,615.91,4.234,35x55x72cm,324,Supplier_17,2025-05-13,OUT_OF_STOCK
-PROD0009,Ultra Technical 3538,Books,Technical,GlobalBrand,2165.46,803.51,45.497,49x75x55cm,605,Supplier_2,2024-10-04,OUT_OF_STOCK
-PROD0010,Advanced Furniture 9720,Home,Furniture,PremiumCo,0,479.26,34.0,61x100x25cm,130,Supplier_11,2025-01-17,ACTIVE
-PROD0011,Elite Accessories 5714,Clothing,Accessories,ValueBrand,833.77,646.73,10.363,19x39x87cm,732,Supplier_20,2025-04-24,DISCONTINUED
-PROD0012,Basic Non-Fiction 7540,Books,Non-Fiction,LocalMaker,186.62,102.36,19.346,9x57x43cm,119,Supplier_8,2023-09-26,OUT_OF_STOCK
-PROD0013,Elite Water Sports 9913,Sports,Water Sports,LocalMaker,684.67,246.9,11.183,82x6x66cm,819,Supplier_2,2024-09-13,ACTIVE
-PROD0014,Max Accessories 1042,Clothing,Accessories,TechCorp,1055.85,352.44,12.843,18x38x91cm,334,Supplier_13,2024-03-27,DISCONTINUED
-PROD0015,Standard Cameras 314,Electronics,Cameras,PremiumCo,650.96,409.63,25.018,99x12x39cm,783,Supplier_9,2025-01-25,ACTIVE
+PROD0001,Pro Tools 200,Home,Tools,LocalMaker,707.31,522.01,20.932,80x19x64cm,989,Supplier_3,2025-02-02,DISCONTINUED
+PROD0002,Advanced Smartphones 2782,Electronics,Smartphones,TechCorp,535.93,204.64,7.025,82x63x39cm,765,Supplier_8,2025-03-24,ACTIVE
+PROD0003,Pro Women 678,Clothing,Women,ValueBrand,2369.33,925.74,23.114,12x87x26cm,825,Supplier_1,2023-08-24,ACTIVE
+PROD0004,Premium Audio 508,Electronics,Audio,PremiumCo,2335.54,804.97,12.481,19x88x76cm,824,Supplier_5,2024-06-13,ACTIVE
+PROD0005,Ultra Team Sports 3531,Sports,Team Sports,LocalMaker,63.31,32.94,15.152,35x58x74cm,352,Supplier_6,2024-09-13,ACTIVE
+PROD0006,Pro Technical 5864,Books,Technical,TechCorp,1400.8,629.26,7.316,91x23x52cm,82,Supplier_15,2023-10-15,DISCONTINUED
+PROD0007,Advanced Outdoor 2153,Sports,Outdoor,GlobalBrand,2777.79,926.38,31.678,81x96x64cm,969,Supplier_1,2025-02-15,DISCONTINUED
+PROD0008,Ultra Accessories 610,Clothing,Accessories,TechCorp,1501.99,802.89,2.969,17x54x89cm,66,Supplier_3,2023-11-23,OUT_OF_STOCK
+PROD0009,Standard Men 3951,Clothing,Men,TechCorp,74.53,40.93,3.332,43x100x26cm,180,Supplier_14,2024-11-21,ACTIVE
+PROD0010,Basic Tools 1215,Home,Tools,PremiumCo,397.85,280.1,33.158,66x61x32cm,45,Supplier_14,2025-02-11,ACTIVE
+PROD0011,Premium Fitness 3368,Sports,Fitness,PremiumCo,1206.74,589.12,41.173,26x88x89cm,379,Supplier_4,2024-01-26,OUT_OF_STOCK
+PROD0012,Advanced Non-Fiction 8632,Books,Non-Fiction,ValueBrand,1534.23,826.14,23.652,73x69x7cm,436,Supplier_19,2025-03-16,OUT_OF_STOCK
+PROD0013,Advanced Tablets 5834,Electronics,Tablets,LocalMaker,189.77,72.13,23.308,52x9x98cm,331,Supplier_20,2024-02-14,DISCONTINUED
+PROD0014,Standard Kitchen 4826,Home,Kitchen,LocalMaker,1877.57,779.74,19.034,72x34x46cm,138,Supplier_15,2025-06-21,OUT_OF_STOCK
+PROD0015,Ultra Non-Fiction 1364,Books,Non-Fiction,ValueBrand,277.64,121.94,35.722,67x100x40cm,301,Supplier_10,2024-06-01,ACTIVE

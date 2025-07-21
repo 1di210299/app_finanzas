@@ -18,10 +18,10 @@ import logging
 
 class CompletePipelineValidator:
     def __init__(self):
-        self.data_path = "/Users/juandiegogutierrezcortez/test_GM/data-pipeline/data"
+        self.data_path = "data"  # Ruta relativa correcta
         self.db_config = {
             "host": "localhost",
-            "database": "data_warehouse", 
+            "database": "airflow", 
             "user": "airflow",
             "password": "airflow123",
             "port": 5432
