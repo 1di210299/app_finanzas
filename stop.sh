@@ -8,4 +8,4 @@ echo -e "${BLUE}🛑 Deteniendo Data Pipeline...${NC}"
 
 docker-compose down
 
-echo -e "${GREEN}✅ Data Pipeline detenido correctamente${NC}"
+echo -e "${GREEN}Data Pipeline detenido correctamente${NC}"

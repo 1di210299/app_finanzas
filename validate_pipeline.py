@@ -45,16 +45,16 @@ class PipelineValidator:
                         count = len(data) if isinstance(data, list) else 1
                 
                 results[file] = {'exists': True, 'records': count}
-                print(f"   ✅ {file}: {count} registros")
+                print(f"   {file}: {count} registros")
             else:
                 results[file] = {'exists': False, 'records': 0}
-                print(f"   ❌ {file}: No encontrado")
+                print(f"   {file}: No encontrado")
         
         return results
     
     def validate_database_connection(self):
         """Valida conexión a PostgreSQL"""
-        print("🗄️ Validando conexión a base de datos...")
+        print("🗄Validando conexión a base de datos...")
         
         try:
             conn = psycopg2.connect(**self.db_config)
@@ -68,8 +68,8 @@ class PipelineValidator:
             """)
             tables = cursor.fetchall()
             
-            print(f"   ✅ Conexión exitosa")
-            print(f"   📊 Tablas encontradas: {len(tables)}")
+            print(f"   Conexión exitosa")
+            print(f"   Tablas encontradas: {len(tables)}")
             for table in tables:
                 print(f"      - {table[0]}")
                 
@@ -79,12 +79,12 @@ class PipelineValidator:
             return True
             
         except Exception as e:
-            print(f"   ❌ Error de conexión: {str(e)}")
+            print(f"   Error de conexión: {str(e)}")
             return False
     
     def simulate_etl_process(self):
         """Simula el proceso ETL completo"""
-        print("⚡ Simulando proceso ETL...")
+        print("Simulando proceso ETL...")
         
         # Simular ingesta
         sales_df = pd.read_csv(f"{self.data_path}/raw/sales_data_small.csv")
@@ -110,7 +110,7 @@ class PipelineValidator:
         output_file = f"{processed_path}/sales_processed.csv"
         sales_clean.to_csv(output_file, index=False)
         
-        print(f"   💾 Carga: Datos guardados en {output_file}")
+        print(f"   Carga: Datos guardados en {output_file}")
         
         return {
             'original_records': len(sales_df),
@@ -120,7 +120,7 @@ class PipelineValidator:
     
     def generate_validation_report(self):
         """Genera reporte de validación completo"""
-        print("📋 Generando reporte de validación...")
+        print("Generando reporte de validación...")
         
         report = {
             'validation_timestamp': datetime.now().isoformat(),
@@ -142,18 +142,18 @@ class PipelineValidator:
         return report
 
 def main():
-    print("🚀 VALIDACIÓN DEL PIPELINE ETL")
+    print("VALIDACIÓN DEL PIPELINE ETL")
     print("=" * 50)
     
     validator = PipelineValidator()
     report = validator.generate_validation_report()
     
-    print("\n✅ VALIDACIÓN COMPLETADA")
+    print("\nVALIDACIÓN COMPLETADA")
     print("=" * 50)
-    print(f"📊 Registros procesados: {report['etl_simulation']['original_records']}")
+    print(f"Registros procesados: {report['etl_simulation']['original_records']}")
     print(f"🧹 Registros limpios: {report['etl_simulation']['cleaned_records']}")
-    print(f"📅 Fecha de validación: {report['validation_timestamp']}")
-    print(f"🏷️ Estado: {report['pipeline_status']}")
+    print(f"Fecha de validación: {report['validation_timestamp']}")
+    print(f"🏷Estado: {report['pipeline_status']}")
 
 if __name__ == "__main__":
     main()

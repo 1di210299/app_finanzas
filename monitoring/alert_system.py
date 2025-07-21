@@ -159,7 +159,7 @@ class AlertSystem:
     def send_success_notification(self):
         """Envía notificación de éxito del pipeline"""
         message = f"""
-        ✅ Data pipeline completed successfully!
+        Data pipeline completed successfully!
         
         Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
         

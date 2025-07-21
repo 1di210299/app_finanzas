@@ -45,7 +45,7 @@ class CompletePipelineValidator:
 
     def initialize_spark(self):
         """Inicializa Spark Session"""
-        print("⚡ Inicializando Spark...")
+        print("Inicializando Spark...")
         try:
             self.spark = SparkSession.builder \
                 .appName("PipelineValidator") \
@@ -56,12 +56,12 @@ class CompletePipelineValidator:
             # Configurar nivel de log para reducir verbosidad
             self.spark.sparkContext.setLogLevel("WARN")
             
-            print(f"   ✅ Spark inicializado - Versión: {self.spark.version}")
+            print(f"   Spark inicializado - Versión: {self.spark.version}")
             self.logger.info(f"Spark initialized successfully - Version: {self.spark.version}")
             return True
             
         except Exception as e:
-            print(f"   ❌ Error inicializando Spark: {str(e)}")
+            print(f"   Error inicializando Spark: {str(e)}")
             self.logger.error(f"Failed to initialize Spark: {str(e)}")
             return False
 
@@ -79,21 +79,21 @@ class CompletePipelineValidator:
             retrieved_value = self.redis_client.get(test_key).decode('utf-8')
             
             if retrieved_value == test_value:
-                print(f"   ✅ Redis funcionando correctamente")
+                print(f"   Redis funcionando correctamente")
                 self.logger.info("Redis connection successful")
                 return True
             else:
-                print(f"   ❌ Error en operación de Redis")
+                print(f"   Error en operación de Redis")
                 return False
                 
         except Exception as e:
-            print(f"   ❌ Error conectando a Redis: {str(e)}")
+            print(f"   Error conectando a Redis: {str(e)}")
             self.logger.error(f"Redis connection failed: {str(e)}")
             return False
 
     def test_postgres_connection(self):
         """Prueba conexión a PostgreSQL"""
-        print("🗄️ Probando conexión a PostgreSQL...")
+        print("🗄Probando conexión a PostgreSQL...")
         try:
             conn = psycopg2.connect(**self.db_config)
             cursor = conn.cursor()
@@ -134,16 +134,16 @@ class CompletePipelineValidator:
             conn.close()
             
             if result and result[0] == test_data:
-                print(f"   ✅ PostgreSQL funcionando correctamente")
-                print(f"   📊 Tablas encontradas: {len(tables)}")
+                print(f"   PostgreSQL funcionando correctamente")
+                print(f"   Tablas encontradas: {len(tables)}")
                 self.logger.info(f"PostgreSQL connection successful. Tables found: {len(tables)}")
                 return True
             else:
-                print(f"   ❌ Error en operación de PostgreSQL")
+                print(f"   Error en operación de PostgreSQL")
                 return False
                 
         except Exception as e:
-            print(f"   ❌ Error conectando a PostgreSQL: {str(e)}")
+            print(f"   Error conectando a PostgreSQL: {str(e)}")
             self.logger.error(f"PostgreSQL connection failed: {str(e)}")
             return False
 
@@ -201,7 +201,7 @@ class CompletePipelineValidator:
                         }
                     
                     total_records += count
-                    print(f"   ✅ {dataset_name}: {count} registros")
+                    print(f"   {dataset_name}: {count} registros")
                     
                 except Exception as e:
                     validation_results[dataset_name] = {
@@ -210,26 +210,26 @@ class CompletePipelineValidator:
                         'status': 'ERROR',
                         'error': str(e)
                     }
-                    print(f"   ❌ {dataset_name}: Error - {str(e)}")
+                    print(f"   {dataset_name}: Error - {str(e)}")
             else:
                 validation_results[dataset_name] = {
                     'file': filename,
                     'records': 0,
                     'status': 'NOT_FOUND'
                 }
-                print(f"   ⚠️ {dataset_name}: Archivo no encontrado")
+                print(f"   ⚠{dataset_name}: Archivo no encontrado")
         
-        print(f"\n📊 Total de registros: {total_records}")
+        print(f"\nTotal de registros: {total_records}")
         self.logger.info(f"Data validation completed. Total records: {total_records}")
         
         return validation_results, total_records
 
     def run_spark_etl_process(self):
         """Ejecuta proceso ETL completo con Spark"""
-        print("\n⚡ Ejecutando proceso ETL con Spark...")
+        print("\nEjecutando proceso ETL con Spark...")
         
         if not self.spark:
-            print("   ❌ Spark no está inicializado")
+            print("   Spark no está inicializado")
             return {'error': 'Spark not initialized'}
         
         try:
@@ -298,7 +298,7 @@ class CompletePipelineValidator:
                 enriched_sales = sales_transformed
             
             # 4. AGREGACIONES
-            print("   📈 Fase 4: Agregaciones y métricas")
+            print("   Fase 4: Agregaciones y métricas")
             
             if 'total_amount' in enriched_sales.columns:
                 # Calcular métricas agregadas
@@ -325,7 +325,7 @@ class CompletePipelineValidator:
                 summary = {}
             
             # 5. PERSISTENCIA
-            print("   💾 Fase 5: Persistencia")
+            print("   Fase 5: Persistencia")
             
             output_path = f"{self.data_path}/processed/sales_spark_processed"
             enriched_sales.coalesce(1).write \
@@ -347,13 +347,13 @@ class CompletePipelineValidator:
             }
             
         except Exception as e:
-            print(f"   ❌ Error en ETL con Spark: {str(e)}")
+            print(f"   Error en ETL con Spark: {str(e)}")
             self.logger.error(f"Spark ETL process failed: {str(e)}")
             return {'error': str(e)}
 
     def generate_comprehensive_report(self):
         """Genera reporte completo de validación"""
-        print("\n📋 Generando reporte completo de validación...")
+        print("\nGenerando reporte completo de validación...")
         
         # Ejecutar todas las validaciones
         spark_status = self.initialize_spark()
@@ -409,9 +409,9 @@ class CompletePipelineValidator:
             self.redis_client.close()
 
 def main():
-    print("🚀 VALIDACIÓN COMPLETA DEL PIPELINE ETL")
+    print("VALIDACIÓN COMPLETA DEL PIPELINE ETL")
     print("=" * 60)
-    print("🔧 Utilizando: Spark + PostgreSQL + Redis + Airflow")
+    print("Utilizando: Spark + PostgreSQL + Redis + Airflow")
     print("=" * 60)
     
     validator = CompletePipelineValidator()
@@ -420,24 +420,24 @@ def main():
         report = validator.generate_comprehensive_report()
         
         print("\n" + "=" * 60)
-        print("✅ RESUMEN EJECUTIVO")
+        print("RESUMEN EJECUTIVO")
         print("=" * 60)
         
         # Estado de infraestructura
         infra = report['infrastructure_status']
-        print(f"🏗️ INFRAESTRUCTURA:")
+        print(f"🏗INFRAESTRUCTURA:")
         print(f"   Spark: {infra['spark']}")
         print(f"   PostgreSQL: {infra['postgresql']}")
         print(f"   Redis: {infra['redis']}")
         
         # Estado del pipeline
         health = report['pipeline_health']
-        print(f"\n🎯 ESTADO DEL PIPELINE: {health['overall_status']}")
+        print(f"\nESTADO DEL PIPELINE: {health['overall_status']}")
         print(f"   Servicios activos: {health['critical_services_up']}/{health['total_services']}")
         
         # Datos procesados
         data_info = report['data_validation']
-        print(f"\n📊 DATOS:")
+        print(f"\nDATOS:")
         print(f"   Registros fuente totales: {data_info['total_source_records']:,}")
         
         # ETL Results
@@ -448,20 +448,20 @@ def main():
             
             if 'business_metrics' in etl and etl['business_metrics']:
                 metrics = etl['business_metrics']
-                print(f"\n💰 MÉTRICAS DE NEGOCIO:")
+                print(f"\nMÉTRICAS DE NEGOCIO:")
                 print(f"   Total de ventas: ${metrics.get('total_sales', 0):,.2f}")
                 print(f"   Venta promedio: ${metrics.get('avg_sale', 0):,.2f}")
                 print(f"   Transacciones: {metrics.get('total_transactions', 0):,}")
         
-        print(f"\n📅 Validación completada: {report['validation_metadata']['timestamp']}")
+        print(f"\nValidación completada: {report['validation_metadata']['timestamp']}")
         
         if health['overall_status'] == 'HEALTHY':
             print("\n🎉 ¡PIPELINE COMPLETAMENTE FUNCIONAL Y LISTO PARA PRODUCCIÓN!")
         else:
-            print("\n⚠️ Pipeline funcional pero con servicios degradados")
+            print("\n⚠Pipeline funcional pero con servicios degradados")
             
     except Exception as e:
-        print(f"\n❌ Error en validación: {str(e)}")
+        print(f"\nError en validación: {str(e)}")
         
     finally:
         validator.cleanup()

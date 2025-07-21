@@ -1,11 +1,11 @@
 #!/bin/bash
 # Script para ejecutar validación completa con entorno virtual
 
-echo "🚀 INICIANDO VALIDACIÓN COMPLETA DEL PIPELINE ETL"
+echo "INICIANDO VALIDACIÓN COMPLETA DEL PIPELINE ETL"
 echo "=================================================="
 
 # Activar entorno virtual
-echo "📦 Activando entorno virtual Python 3.11..."
+echo "Activando entorno virtual Python 3.11..."
 source .venv/bin/activate
 
 # Verificar Python
@@ -14,33 +14,33 @@ echo "📍 Ubicación de Python: $(which python)"
 
 # Verificar dependencias instaladas
 echo ""
-echo "📋 Verificando dependencias críticas..."
+echo "Verificando dependencias críticas..."
 python -c "
 try:
     import pandas as pd
-    print('   ✅ pandas:', pd.__version__)
+    print('   pandas:', pd.__version__)
 except ImportError:
-    print('   ❌ pandas: No instalado')
+    print('   pandas: No instalado')
 
 try:
     import psycopg2
-    print('   ✅ psycopg2: Instalado')
+    print('   psycopg2: Instalado')
 except ImportError:
-    print('   ❌ psycopg2: No instalado')
+    print('   psycopg2: No instalado')
     
 try:
     import pyspark
-    print('   ✅ pyspark:', pyspark.__version__)
+    print('   pyspark:', pyspark.__version__)
 except ImportError:
-    print('   ❌ pyspark: No instalado')
+    print('   pyspark: No instalado')
 
 try:
     import redis
-    print('   ✅ redis: Instalado')
+    print('   redis: Instalado')
 except ImportError:
-    print('   ❌ redis: No instalado')
+    print('   redis: No instalado')
 "
 
 echo ""
-echo "⚡ Ejecutando validación completa..."
+echo "Ejecutando validación completa..."
 python validate_complete.py

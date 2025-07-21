@@ -4,7 +4,7 @@ GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-echo -e "${BLUE}📊 Logs del Data Pipeline${NC}"
+echo -e "${BLUE}Logs del Data Pipeline${NC}"
 echo ""
 echo "Selecciona el servicio:"
 echo "1) Airflow Webserver"

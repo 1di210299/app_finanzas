@@ -19,7 +19,7 @@ NC='\033[0m' # No Color
 # Funciones auxiliares
 print_header() {
     echo -e "${BLUE}========================================${NC}"
-    echo -e "${BLUE}🚀 DATA PIPELINE SETUP - macOS${NC}"
+    echo -e "${BLUE}DATA PIPELINE SETUP - macOS${NC}"
     echo -e "${BLUE}========================================${NC}"
 }
 
@@ -28,15 +28,15 @@ print_step() {
 }
 
 print_warning() {
-    echo -e "${YELLOW}⚠️  $1${NC}"
+    echo -e "${YELLOW}⚠ $1${NC}"
 }
 
 print_error() {
-    echo -e "${RED}❌ $1${NC}"
+    echo -e "${RED}$1${NC}"
 }
 
 print_success() {
-    echo -e "${GREEN}✅ $1${NC}"
+    echo -e "${GREEN}$1${NC}"
 }
 
 # Verificar prerrequisitos
@@ -397,7 +397,7 @@ WHERE NOT EXISTS (SELECT 1 FROM dim_customers WHERE customer_code = 'CUST_DEMO')
 -- Mensaje de confirmación
 DO $$
 BEGIN
-    RAISE NOTICE 'Data Warehouse schema created successfully! 🎯';
+    RAISE NOTICE 'Data Warehouse schema created successfully! ';
 END $$;
 EOF
 
@@ -560,7 +560,7 @@ default_args = {
 dag = DAG(
     'data_pipeline_etl_demo',
     default_args=default_args,
-    description='🚀 Pipeline ETL Demo - Escalable y Confiable',
+    description='Pipeline ETL Demo - Escalable y Confiable',
     schedule_interval='@daily',
     max_active_runs=1,
     tags=['etl', 'sales', 'demo', 'data-quality']
@@ -570,22 +570,22 @@ def pipeline_start():
     """Función de inicio del pipeline"""
     logger = logging.getLogger(__name__)
     
-    logger.info("🚀 Iniciando Data Pipeline ETL Demo")
+    logger.info("Iniciando Data Pipeline ETL Demo")
     logger.info("=" * 50)
     
     # Verificar estructura de datos
     data_path = '/opt/airflow/data/raw'
     if os.path.exists(data_path):
         files = os.listdir(data_path)
-        logger.info(f"📁 Archivos encontrados en {data_path}:")
+        logger.info(f"Archivos encontrados en {data_path}:")
         for file in files:
             file_path = os.path.join(data_path, file)
             size = os.path.getsize(file_path)
             logger.info(f"   📄 {file} ({size} bytes)")
     else:
-        logger.warning(f"⚠️  Directorio {data_path} no encontrado")
+        logger.warning(f"⚠ Directorio {data_path} no encontrado")
     
-    logger.info("✅ Pipeline iniciado correctamente")
+    logger.info("Pipeline iniciado correctamente")
     return "pipeline_started"
 
 def data_validation():
@@ -600,31 +600,31 @@ def data_validation():
     try:
         # Validar CSV de ventas
         sales_df = pd.read_csv('/opt/airflow/data/raw/sales_data.csv')
-        logger.info(f"📊 Sales data: {len(sales_df)} registros")
+        logger.info(f"Sales data: {len(sales_df)} registros")
         
         # Validar JSON de clientes
         import json
         with open('/opt/airflow/data/raw/customer_data.json', 'r') as f:
             customers = json.load(f)
-        logger.info(f"👥 Customer data: {len(customers)} registros")
+        logger.info(f"Customer data: {len(customers)} registros")
         
         # Validar CSV de productos
         products_df = pd.read_csv('/opt/airflow/data/raw/products_data.csv')
-        logger.info(f"🛍️  Product data: {len(products_df)} registros")
+        logger.info(f"🛍 Product data: {len(products_df)} registros")
         
-        logger.info("✅ Validación de datos completada")
+        logger.info("Validación de datos completada")
         return "validation_passed"
         
     except Exception as e:
-        logger.error(f"❌ Error en validación: {str(e)}")
+        logger.error(f"Error en validación: {str(e)}")
         raise
 
 def data_quality_summary():
     """Resumen de calidad de datos"""
     logger = logging.getLogger(__name__)
     
-    logger.info("📋 Generando resumen de calidad...")
-    logger.info("🎯 Métricas de calidad:")
+    logger.info("Generando resumen de calidad...")
+    logger.info("Métricas de calidad:")
     logger.info("   ✓ Completitud: 100%")
     logger.info("   ✓ Unicidad: 100%")
     logger.info("   ✓ Validez: 100%")
@@ -681,13 +681,13 @@ task_pipeline_success = BashOperator(
     task_id='pipeline_success',
     bash_command='''
     echo "🎉 ¡Data Pipeline ejecutado exitosamente!"
-    echo "📊 Resumen de ejecución:"
-    echo "   ✅ Datos validados"
-    echo "   ✅ Conexión DB verificada"
-    echo "   ✅ Tablas verificadas"
-    echo "   ✅ Calidad de datos confirmada"
+    echo "Resumen de ejecución:"
+    echo "   Datos validados"
+    echo "   Conexión DB verificada"
+    echo "   Tablas verificadas"
+    echo "   Calidad de datos confirmada"
     echo ""
-    echo "🚀 Pipeline listo para producción!"
+    echo "Pipeline listo para producción!"
     ''',
     dag=dag
 )
@@ -713,11 +713,11 @@ BLUE='\033[0;34m'
 YELLOW='\033[1;33m'
 NC='\033[0m'
 
-echo -e "${BLUE}🚀 Iniciando Data Pipeline...${NC}"
+echo -e "${BLUE}Iniciando Data Pipeline...${NC}"
 
 # Verificar Docker
 if ! docker info &> /dev/null; then
-    echo -e "${YELLOW}⚠️  Docker no está ejecutándose. Iniciando Docker Desktop...${NC}"
+    echo -e "${YELLOW}⚠ Docker no está ejecutándose. Iniciando Docker Desktop...${NC}"
     open -a Docker
     echo "⏳ Esperando a que Docker se inicie..."
     while ! docker info &> /dev/null; do
@@ -730,7 +730,7 @@ if grep -q "PLACEHOLDER_FERNET_KEY" docker-compose.yml; then
     echo -e "${BLUE}🔑 Generando Fernet Key para Airflow...${NC}"
     FERNET_KEY=$(python3 -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())")
     sed -i '' "s/PLACEHOLDER_FERNET_KEY/$FERNET_KEY/g" docker-compose.yml
-    echo -e "${GREEN}✅ Fernet Key configurada${NC}"
+    echo -e "${GREEN}Fernet Key configurada${NC}"
 fi
 
 echo -e "${BLUE}🐳 Iniciando contenedores...${NC}"
@@ -743,7 +743,7 @@ while [ $? -ne 0 ]; do
     sleep 2
     docker-compose exec -T postgres pg_isready -U airflow > /dev/null 2>&1
 done
-echo -e "${GREEN}   ✅ PostgreSQL listo${NC}"
+echo -e "${GREEN}   PostgreSQL listo${NC}"
 
 echo "   ⏳ Redis iniciando..."
 docker-compose exec -T redis redis-cli ping > /dev/null 2>&1
@@ -751,7 +751,7 @@ while [ $? -ne 0 ]; do
     sleep 2
     docker-compose exec -T redis redis-cli ping > /dev/null 2>&1
 done
-echo -e "${GREEN}   ✅ Redis listo${NC}"
+echo -e "${GREEN}   Redis listo${NC}"
 
 echo "   ⏳ Airflow iniciando..."
 sleep 20
@@ -769,18 +769,18 @@ echo ""
 echo -e "${GREEN}🎉 ¡Data Pipeline iniciado correctamente!${NC}"
 echo ""
 echo -e "${BLUE}📍 URLs de acceso:${NC}"
-echo -e "   🌐 Airflow UI: ${YELLOW}http://localhost:8080${NC} (admin/admin123)"
-echo -e "   ⚡ Spark UI:   ${YELLOW}http://localhost:8081${NC}"
-echo -e "   🗄️  PostgreSQL: ${YELLOW}localhost:5432${NC} (airflow/airflow123)"
+echo -e "   Airflow UI: ${YELLOW}http://localhost:8080${NC} (admin/admin123)"
+echo -e "   Spark UI:   ${YELLOW}http://localhost:8081${NC}"
+echo -e "   🗄 PostgreSQL: ${YELLOW}localhost:5432${NC} (airflow/airflow123)"
 echo ""
-echo -e "${BLUE}🎯 Para activar el DAG:${NC}"
+echo -e "${BLUE}Para activar el DAG:${NC}"
 echo "   1. Ir a http://localhost:8080"
 echo "   2. Login con admin/admin123"
 echo "   3. Buscar 'data_pipeline_etl_demo'"
 echo "   4. Activar el toggle del DAG"
 echo "   5. Hacer clic en 'Trigger DAG' para ejecutar"
 echo ""
-echo -e "${GREEN}🚀 ¡Listo para procesar datos a escala!${NC}"
+echo -e "${GREEN}¡Listo para procesar datos a escala!${NC}"
 EOF
 
     chmod +x start.sh
@@ -797,7 +797,7 @@ echo -e "${BLUE}🛑 Deteniendo Data Pipeline...${NC}"
 
 docker-compose down
 
-echo -e "${GREEN}✅ Data Pipeline detenido correctamente${NC}"
+echo -e "${GREEN}Data Pipeline detenido correctamente${NC}"
 EOF
 
     chmod +x stop.sh
@@ -813,13 +813,13 @@ NC='\033[0m'
 
 echo -e "${BLUE}🧹 Limpiando Data Pipeline...${NC}"
 
-echo -e "${YELLOW}⚠️  Esto eliminará todos los contenedores, volúmenes y datos${NC}"
+echo -e "${YELLOW}⚠ Esto eliminará todos los contenedores, volúmenes y datos${NC}"
 read -p "¿Estás seguro? (y/N): " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
     docker-compose down -v --remove-orphans
     docker system prune -f
-    echo -e "${GREEN}✅ Limpieza completada${NC}"
+    echo -e "${GREEN}Limpieza completada${NC}"
 else
     echo "Operación cancelada"
 fi
@@ -835,7 +835,7 @@ GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-echo -e "${BLUE}📊 Logs del Data Pipeline${NC}"
+echo -e "${BLUE}Logs del Data Pipeline${NC}"
 echo ""
 echo "Selecciona el servicio:"
 echo "1) Airflow Webserver"
@@ -878,11 +878,11 @@ create_documentation() {
     print_step "Creando documentación..."
     
     cat > README.md << 'EOF'
-# 🚀 Data Pipeline Escalable - macOS Edition
+# Data Pipeline Escalable - macOS Edition
 
 Pipeline de datos empresarial completo con Apache Airflow, Spark y PostgreSQL.
 
-## ⚡ Inicio Rápido
+## Inicio Rápido
 
 ```bash
 # Iniciar el pipeline completo
@@ -898,22 +898,22 @@ Pipeline de datos empresarial completo con Apache Airflow, Spark y PostgreSQL.
 ./clean.sh
 ```
 
-## 🌐 URLs de Acceso
+## URLs de Acceso
 
 | Servicio | URL | Credenciales |
 |----------|-----|--------------|
-| 🎛️ **Airflow UI** | http://localhost:8080 | admin/admin123 |
-| ⚡ **Spark UI** | http://localhost:8081 | - |
-| 🗄️ **PostgreSQL** | localhost:5432 | airflow/airflow123 |
+| 🎛**Airflow UI** | http://localhost:8080 | admin/admin123 |
+| **Spark UI** | http://localhost:8081 | - |
+| 🗄**PostgreSQL** | localhost:5432 | airflow/airflow123 |
 
-## 📊 DAG Demo Incluido
+## DAG Demo Incluido
 
 El pipeline incluye un DAG de demostración que:
 
-✅ **Valida datos** de múltiples fuentes (CSV, JSON)  
-✅ **Verifica conexiones** a base de datos  
-✅ **Ejecuta checks** de calidad  
-✅ **Genera reportes** automáticos  
+**Valida datos** de múltiples fuentes (CSV, JSON)  
+**Verifica conexiones** a base de datos  
+**Ejecuta checks** de calidad  
+**Genera reportes** automáticos  
 
 ### Activar el DAG:
 1. Ir a http://localhost:8080
@@ -922,7 +922,7 @@ El pipeline incluye un DAG de demostración que:
 4. Activar el toggle del DAG
 5. Hacer clic en "Trigger DAG"
 
-## 🏗️ Arquitectura
+## 🏗Arquitectura
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -937,29 +937,29 @@ El pipeline incluye un DAG de demostración que:
                        └─────────────────┘
 ```
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 data-pipeline/
 ├── 🐳 docker-compose.yml     # Orquestación de servicios
-├── 📦 Dockerfile.airflow     # Container Airflow personalizado
-├── 📋 requirements.txt       # Dependencias Python
-├── 🚀 start.sh              # Script de inicio
+├── Dockerfile.airflow     # Container Airflow personalizado
+├── requirements.txt       # Dependencias Python
+├── start.sh              # Script de inicio
 ├── 🛑 stop.sh               # Script de parada
 ├── 🧹 clean.sh              # Script de limpieza
-├── 📊 logs.sh               # Visor de logs
+├── logs.sh               # Visor de logs
 ├── data/                    # 📂 Datos
 │   ├── raw/                # Datos fuente
 │   ├── processed/          # Datos procesados
 │   └── logs/               # Logs del sistema
-├── dags/                    # 🎯 DAGs de Airflow
-├── spark/                   # ⚡ Jobs de Spark
-├── sql/                     # 🗄️ Scripts SQL
-├── config/                  # ⚙️ Configuraciones
-└── monitoring/              # 📈 Monitoreo
+├── dags/                    # DAGs de Airflow
+├── spark/                   # Jobs de Spark
+├── sql/                     # 🗄Scripts SQL
+├── config/                  # ⚙Configuraciones
+└── monitoring/              # Monitoreo
 ```
 
-## 🔧 Comandos Útiles
+## Comandos Útiles
 
 ### Gestión de Servicios
 ```bash
@@ -986,7 +986,7 @@ docker-compose logs -f airflow-scheduler
 docker-compose exec postgres psql -U airflow -d data_warehouse
 ```
 
-## 🎯 Próximos Pasos
+## Próximos Pasos
 
 1. **Personalizar datos**: Agregar tus CSV/JSON en `data/raw/`
 2. **Crear DAGs**: Desarrollar pipelines en `dags/`
@@ -994,7 +994,7 @@ docker-compose exec postgres psql -U airflow -d data_warehouse
 4. **Configurar alertas**: Setup en `monitoring/`
 5. **Escalar**: Agregar más workers y particionamiento
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Docker no responde
 ```bash
@@ -1024,7 +1024,7 @@ Este pipeline está diseñado para escalar desde datasets pequeños hasta teraby
 **¿Questions?** Revisa los logs con `./logs.sh` o abre un issue.
 
 ---
-*Hecho con ❤️ para macOS - Optimizado para Apple Silicon y Intel*
+*Hecho con ❤para macOS - Optimizado para Apple Silicon y Intel*
 EOF
 
     # Archivo .gitignore
@@ -1095,22 +1095,22 @@ main() {
     echo ""
     print_success "¡Data Pipeline creado exitosamente!"
     echo ""
-    echo -e "${PURPLE}📁 Ubicación: $(pwd)${NC}"
+    echo -e "${PURPLE}Ubicación: $(pwd)${NC}"
     echo ""
-    echo -e "${BLUE}🚀 Para empezar:${NC}"
+    echo -e "${BLUE}Para empezar:${NC}"
     echo -e "   ${GREEN}./start.sh${NC}"
     echo ""
     echo -e "${BLUE}📖 Luego visita:${NC}"
     echo -e "   ${YELLOW}http://localhost:8080${NC} (admin/admin123)"
     echo ""
-    echo -e "${BLUE}🎯 El pipeline incluye:${NC}"
-    echo -e "   ✅ Airflow para orquestación"
-    echo -e "   ✅ Spark para procesamiento distribuido"
-    echo -e "   ✅ PostgreSQL como Data Warehouse"
-    echo -e "   ✅ Datos de ejemplo listos"
-    echo -e "   ✅ DAG demo funcional"
-    echo -e "   ✅ Scripts de gestión automática"
-    echo -e "   ✅ Documentación completa"
+    echo -e "${BLUE}El pipeline incluye:${NC}"
+    echo -e "   Airflow para orquestación"
+    echo -e "   Spark para procesamiento distribuido"
+    echo -e "   PostgreSQL como Data Warehouse"
+    echo -e "   Datos de ejemplo listos"
+    echo -e "   DAG demo funcional"
+    echo -e "   Scripts de gestión automática"
+    echo -e "   Documentación completa"
     echo ""
     echo -e "${GREEN}🎉 ¡Listo para procesar datos a escala!${NC}"
     echo ""

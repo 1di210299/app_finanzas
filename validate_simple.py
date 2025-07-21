@@ -35,31 +35,31 @@ class SimpleValidator:
                         df = pd.read_csv(file_path)
                         count = len(df)
                         # Mostrar muestra de datos
-                        print(f"   ✅ {file}: {count} registros")
+                        print(f"   {file}: {count} registros")
                         if count > 0:
-                            print(f"      📊 Columnas: {list(df.columns)}")
+                            print(f"      Columnas: {list(df.columns)}")
                     elif file.endswith('.json'):
                         with open(file_path, 'r') as f:
                             data = json.load(f)
                             count = len(data) if isinstance(data, list) else 1
-                        print(f"   ✅ {file}: {count} registros")
+                        print(f"   {file}: {count} registros")
                     
                     results[file] = {'exists': True, 'records': count}
                     total_records += count
                     
                 except Exception as e:
-                    print(f"   ⚠️ {file}: Error al leer - {str(e)}")
+                    print(f"   ⚠{file}: Error al leer - {str(e)}")
                     results[file] = {'exists': True, 'records': 0, 'error': str(e)}
             else:
                 results[file] = {'exists': False, 'records': 0}
-                print(f"   ❌ {file}: No encontrado")
+                print(f"   {file}: No encontrado")
         
-        print(f"\n📊 Total de registros disponibles: {total_records}")
+        print(f"\nTotal de registros disponibles: {total_records}")
         return results, total_records
     
     def simulate_etl_process(self):
         """Simula el proceso ETL completo"""
-        print("\n⚡ Simulando proceso ETL...")
+        print("\nSimulando proceso ETL...")
         
         try:
             # Cargar datos pequeños para demostración
@@ -67,7 +67,7 @@ class SimpleValidator:
             print(f"   📥 Ingesta: {len(sales_df)} registros de ventas cargados")
             
             # Mostrar muestra de datos
-            print(f"   📋 Estructura de datos:")
+            print(f"   Estructura de datos:")
             print(f"      - Columnas: {list(sales_df.columns)}")
             print(f"      - Tipos: {dict(sales_df.dtypes)}")
             
@@ -103,7 +103,7 @@ class SimpleValidator:
                     'max_sale': sales_clean['total_amount'].max(),
                     'min_sale': sales_clean['total_amount'].min()
                 }
-                print(f"   📈 Agregaciones calculadas:")
+                print(f"   Agregaciones calculadas:")
                 print(f"      - Total de ventas: ${summary['total_sales']:.2f}")
                 print(f"      - Venta promedio: ${summary['avg_sale']:.2f}")
                 print(f"      - Venta máxima: ${summary['max_sale']:.2f}")
@@ -116,7 +116,7 @@ class SimpleValidator:
             output_file = f"{processed_path}/sales_processed.csv"
             sales_clean.to_csv(output_file, index=False)
             
-            print(f"   💾 Carga: Datos procesados guardados en {output_file}")
+            print(f"   Carga: Datos procesados guardados en {output_file}")
             
             return {
                 'original_records': original_count,
@@ -127,12 +127,12 @@ class SimpleValidator:
             }
             
         except Exception as e:
-            print(f"   ❌ Error en ETL: {str(e)}")
+            print(f"   Error en ETL: {str(e)}")
             return {'error': str(e)}
     
     def generate_validation_report(self):
         """Genera reporte de validación completo"""
-        print("\n📋 Generando reporte de validación...")
+        print("\nGenerando reporte de validación...")
         
         data_validation, total_records = self.validate_data_sources()
         etl_results = self.simulate_etl_process()
@@ -162,37 +162,37 @@ class SimpleValidator:
         return report
 
 def main():
-    print("🚀 VALIDACIÓN DEL PIPELINE ETL")
+    print("VALIDACIÓN DEL PIPELINE ETL")
     print("=" * 50)
     
     validator = SimpleValidator()
     report = validator.generate_validation_report()
     
     print("\n" + "=" * 50)
-    print("✅ RESUMEN DE VALIDACIÓN")
+    print("RESUMEN DE VALIDACIÓN")
     print("=" * 50)
     
     if not report['etl_simulation'].get('error'):
-        print(f"📊 Registros fuente totales: {report['total_source_records']}")
+        print(f"Registros fuente totales: {report['total_source_records']}")
         print(f"📥 Registros procesados: {report['etl_simulation']['original_records']}")
         print(f"🧹 Registros limpios: {report['etl_simulation']['cleaned_records']}")
         print(f"🔄 Transformaciones aplicadas: {report['etl_simulation']['transformations_applied']}")
-        print(f"📅 Fecha de validación: {report['validation_timestamp']}")
-        print(f"🏷️ Estado del pipeline: {report['pipeline_status']}")
+        print(f"Fecha de validación: {report['validation_timestamp']}")
+        print(f"🏷Estado del pipeline: {report['pipeline_status']}")
         
         if 'summary' in report['etl_simulation'] and report['etl_simulation']['summary']:
             summary = report['etl_simulation']['summary']
-            print(f"\n💰 MÉTRICAS DE NEGOCIO:")
+            print(f"\nMÉTRICAS DE NEGOCIO:")
             print(f"   Total de ventas: ${summary['total_sales']:.2f}")
             print(f"   Venta promedio: ${summary['avg_sale']:.2f}")
     else:
-        print(f"❌ Error en validación: {report['etl_simulation']['error']}")
+        print(f"Error en validación: {report['etl_simulation']['error']}")
     
-    print(f"\n📋 Servicios activos:")
+    print(f"\nServicios activos:")
     for service, status in report['services_status'].items():
         print(f"   {service}: {status}")
     
-    print(f"\n🎯 CONCLUSIÓN: El pipeline está funcional y listo para producción!")
+    print(f"\nCONCLUSIÓN: El pipeline está funcional y listo para producción!")
 
 if __name__ == "__main__":
     main()

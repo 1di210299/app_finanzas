@@ -24,7 +24,7 @@ def check_container_status():
     
     success, output, error = run_docker_command("docker-compose ps --format json")
     if not success:
-        print(f"   ❌ Error obteniendo estado: {error}")
+        print(f"   Error obteniendo estado: {error}")
         return False
     
     containers = []
@@ -40,97 +40,97 @@ def check_container_status():
         status = container.get('State', 'unknown')
         name = container.get('Service', 'unknown')
         if status == 'running':
-            print(f"   ✅ {name}: {status}")
+            print(f"   {name}: {status}")
         else:
-            print(f"   ❌ {name}: {status}")
+            print(f"   {name}: {status}")
             all_running = False
     
     return all_running
 
 def check_airflow_services():
     """Verifica que Airflow esté funcionando"""
-    print("\n⚡ Verificando servicios de Airflow...")
+    print("\nVerificando servicios de Airflow...")
     
     # Verificar scheduler - método alternativo más confiable
     success, output, error = run_docker_command("docker exec test_gm-airflow-scheduler-1 pgrep -f 'airflow scheduler'")
     if success and output.strip():
-        print("   ✅ Airflow Scheduler funcionando")
+        print("   Airflow Scheduler funcionando")
     else:
         # Método de respaldo usando logs
         success2, output2, error2 = run_docker_command("docker logs test_gm-airflow-scheduler-1 --tail 5 | grep -i 'scheduler'")
         if success2 and "scheduler" in output2.lower():
-            print("   ✅ Airflow Scheduler funcionando (verificado por logs)")
+            print("   Airflow Scheduler funcionando (verificado por logs)")
         else:
-            print("   ❌ Airflow Scheduler no encontrado")
+            print("   Airflow Scheduler no encontrado")
             return False
     
     # Verificar webserver - método más confiable
     success, output, error = run_docker_command("docker exec test_gm-airflow-webserver-1 pgrep -f 'airflow webserver'")
     if success and output.strip():
-        print("   ✅ Airflow Webserver funcionando")
+        print("   Airflow Webserver funcionando")
     else:
         # Método de respaldo usando puerto
         success2, output2, error2 = run_docker_command("docker exec test_gm-airflow-webserver-1 netstat -tlnp | grep ':8080'")
         if success2 and ":8080" in output2:
-            print("   ✅ Airflow Webserver funcionando (puerto 8080 activo)")
+            print("   Airflow Webserver funcionando (puerto 8080 activo)")
         else:
-            print("   ❌ Airflow Webserver no encontrado")
+            print("   Airflow Webserver no encontrado")
             return False
     
     # Verificar DAGs
     success, output, error = run_docker_command("docker exec test_gm-airflow-scheduler-1 airflow dags list")
     if success and "data_pipeline_etl" in output:
-        print("   ✅ DAG 'data_pipeline_etl' cargado correctamente")
+        print("   DAG 'data_pipeline_etl' cargado correctamente")
         return True
     else:
-        print("   ❌ DAG 'data_pipeline_etl' no encontrado")
+        print("   DAG 'data_pipeline_etl' no encontrado")
         return False
 
 def check_spark_cluster():
     """Verifica que Spark esté funcionando"""
-    print("\n⚡ Verificando cluster de Spark...")
+    print("\nVerificando cluster de Spark...")
     
     # Verificar Spark Master
     success, output, error = run_docker_command("docker exec test_gm-spark-master-1 ps aux | grep spark")
     if success and "spark" in output.lower():
-        print("   ✅ Spark Master funcionando")
+        print("   Spark Master funcionando")
     else:
-        print("   ❌ Spark Master no encontrado")
+        print("   Spark Master no encontrado")
         return False
     
     # Verificar Spark Worker
     success, output, error = run_docker_command("docker exec test_gm-spark-worker-1 ps aux | grep spark")
     if success and "spark" in output.lower():
-        print("   ✅ Spark Worker funcionando")
+        print("   Spark Worker funcionando")
         return True
     else:
-        print("   ❌ Spark Worker no encontrado")
+        print("   Spark Worker no encontrado")
         return False
 
 def check_databases():
     """Verifica las conexiones a bases de datos"""
-    print("\n🗄️ Verificando bases de datos...")
+    print("\n🗄Verificando bases de datos...")
     
     # PostgreSQL
     success, output, error = run_docker_command("docker exec test_gm-postgres-1 pg_isready -h localhost -p 5432")
     if success:
-        print("   ✅ PostgreSQL respondiendo")
+        print("   PostgreSQL respondiendo")
     else:
-        print("   ❌ PostgreSQL no responde")
+        print("   PostgreSQL no responde")
         return False
     
     # Redis
     success, output, error = run_docker_command("docker exec test_gm-redis-1 redis-cli ping")
     if success and "PONG" in output:
-        print("   ✅ Redis respondiendo")
+        print("   Redis respondiendo")
         return True
     else:
-        print("   ❌ Redis no responde")
+        print("   Redis no responde")
         return False
 
 def check_data_files():
     """Verifica que los archivos de datos estén presentes"""
-    print("\n📁 Verificando archivos de datos...")
+    print("\nVerificando archivos de datos...")
     
     data_files = [
         "data/raw/sales_data.csv",
@@ -144,18 +144,18 @@ def check_data_files():
     for file_path in data_files:
         success, output, error = run_docker_command(f"test -f {file_path} && echo 'exists' || echo 'missing'")
         if "exists" in output:
-            print(f"   ✅ {file_path}")
+            print(f"   {file_path}")
         else:
-            print(f"   ❌ {file_path} - Missing")
+            print(f"   {file_path} - Missing")
             all_present = False
     
     return all_present
 
 def generate_validation_report():
     """Genera un reporte completo de validación"""
-    print("🚀 VALIDACIÓN COMPLETA DEL PIPELINE ETL EN DOCKER")
+    print("VALIDACIÓN COMPLETA DEL PIPELINE ETL EN DOCKER")
     print("=" * 60)
-    print(f"📅 Fecha: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"Fecha: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 60)
     
     results = {}
@@ -168,27 +168,27 @@ def generate_validation_report():
     results['data_files'] = check_data_files()
     
     # Resumen final
-    print("\n📊 RESUMEN DE VALIDACIÓN")
+    print("\nRESUMEN DE VALIDACIÓN")
     print("=" * 30)
     
     total_checks = len(results)
     passed_checks = sum(1 for result in results.values() if result)
     
     for component, status in results.items():
-        status_icon = "✅" if status else "❌"
+        status_icon = "✓" if status else "✗"
         print(f"{status_icon} {component.title()}: {'PASSED' if status else 'FAILED'}")
     
-    print(f"\n📈 Resultado: {passed_checks}/{total_checks} componentes funcionando")
+    print(f"\nResultado: {passed_checks}/{total_checks} componentes funcionando")
     
     if passed_checks == total_checks:
         print("🎉 ¡PIPELINE COMPLETAMENTE FUNCIONAL!")
-        print("\n🌐 Acceso a interfaces:")
+        print("\nAcceso a interfaces:")
         print("   • Airflow UI: http://localhost:8080 (admin/admin123)")
         print("   • Spark UI:   http://localhost:8081")
         print("   • PostgreSQL: localhost:5432 (airflow/airflow123)")
         return True
     else:
-        print("⚠️  Algunos componentes necesitan atención")
+        print("⚠ Algunos componentes necesitan atención")
         return False
 
 if __name__ == "__main__":

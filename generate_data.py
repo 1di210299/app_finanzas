@@ -48,7 +48,7 @@ def ensure_directory():
 
 def generate_sales_data(size, filename):
     """Genera datos de ventas con casos específicos de calidad"""
-    print(f"📊 Generando {size} transacciones de ventas...")
+    print(f"Generando {size} transacciones de ventas...")
     
     sales_data = []
     duplicate_count = 0
@@ -128,15 +128,15 @@ def generate_sales_data(size, filename):
         writer.writeheader()
         writer.writerows(sales_data)
     
-    print(f"   ✅ {len(sales_data)} transacciones generadas")
-    print(f"   📊 Duplicados introducidos: {duplicate_count}")
-    print(f"   📊 Valores nulos introducidos: {null_count}")
+    print(f"   {len(sales_data)} transacciones generadas")
+    print(f"   Duplicados introducidos: {duplicate_count}")
+    print(f"   Valores nulos introducidos: {null_count}")
     
     return len(sales_data)
 
 def generate_customer_data(size, filename):
     """Genera datos de clientes con casos de calidad"""
-    print(f"👥 Generando {size} clientes...")
+    print(f"Generando {size} clientes...")
     
     customers = []
     duplicate_emails = 0
@@ -221,14 +221,14 @@ def generate_customer_data(size, filename):
     with open(f'data/raw/{filename}', 'w', encoding='utf-8') as jsonfile:
         json.dump(customers, jsonfile, indent=2, ensure_ascii=False)
     
-    print(f"   ✅ {len(customers)} clientes generados")
-    print(f"   📊 Emails duplicados: {duplicate_emails}")
+    print(f"   {len(customers)} clientes generados")
+    print(f"   Emails duplicados: {duplicate_emails}")
     
     return len(customers)
 
 def generate_product_data(size, filename):
     """Genera datos de productos"""
-    print(f"🛍️ Generando {size} productos...")
+    print(f"🛍Generando {size} productos...")
     
     products = []
     
@@ -280,13 +280,13 @@ def generate_product_data(size, filename):
         writer.writeheader()
         writer.writerows(products)
     
-    print(f"   ✅ {len(products)} productos generados")
+    print(f"   {len(products)} productos generados")
     
     return len(products)
 
 def generate_suppliers_data(size, filename):
     """Genera datos de proveedores (tabla adicional para JOINs)"""
-    print(f"🏭 Generando {size} proveedores...")
+    print(f"Generando {size} proveedores...")
     
     suppliers = []
     
@@ -313,7 +313,7 @@ def generate_suppliers_data(size, filename):
         writer.writeheader()
         writer.writerows(suppliers)
     
-    print(f"   ✅ {len(suppliers)} proveedores generados")
+    print(f"   {len(suppliers)} proveedores generados")
     return len(suppliers)
 
 def generate_data_quality_report():
@@ -357,20 +357,20 @@ def generate_data_quality_report():
     with open('data/raw/data_quality_report.json', 'w', encoding='utf-8') as f:
         json.dump(report, f, indent=2, ensure_ascii=False)
     
-    print("📋 Reporte de calidad de datos generado: data_quality_report.json")
+    print("Reporte de calidad de datos generado: data_quality_report.json")
 
 def main():
     """Función principal"""
-    print("🎯 GENERADOR DE DATOS SIMULADOS PARA PIPELINE ETL")
+    print("GENERADOR DE DATOS SIMULADOS PARA PIPELINE ETL")
     print("=" * 60)
-    print(f"📅 Fecha de generación: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"Fecha de generación: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print()
     
     # Asegurar que existe el directorio
     ensure_directory()
     
     # Datasets pequeños (para pruebas rápidas)
-    print("📦 GENERANDO DATASETS PEQUEÑOS (PRUEBAS RÁPIDAS)")
+    print("GENERANDO DATASETS PEQUEÑOS (PRUEBAS RÁPIDAS)")
     sales_count = generate_sales_data(SMALL_SIZE, 'sales_data_small.csv')
     customer_count = generate_customer_data(min(20, SMALL_SIZE//2), 'customer_data_small.json')
     product_count = generate_product_data(min(15, SMALL_SIZE//3), 'products_data_small.csv')
@@ -379,7 +379,7 @@ def main():
     print()
     
     # Datasets medianos (para testing normal)
-    print("📦 GENERANDO DATASETS MEDIANOS (TESTING NORMAL)")
+    print("GENERANDO DATASETS MEDIANOS (TESTING NORMAL)")
     sales_count += generate_sales_data(MEDIUM_SIZE, 'sales_data_medium.csv')
     customer_count += generate_customer_data(min(100, MEDIUM_SIZE//5), 'customer_data_medium.json')
     product_count += generate_product_data(min(50, MEDIUM_SIZE//10), 'products_data_medium.csv')
@@ -387,7 +387,7 @@ def main():
     print()
     
     # Datasets grandes (para rendimiento)
-    print("📦 GENERANDO DATASETS GRANDES (RENDIMIENTO)")
+    print("GENERANDO DATASETS GRANDES (RENDIMIENTO)")
     sales_count += generate_sales_data(LARGE_SIZE, 'sales_data_large.csv')
     customer_count += generate_customer_data(min(500, LARGE_SIZE//10), 'customer_data_large.json')
     product_count += generate_product_data(min(200, LARGE_SIZE//25), 'products_data_large.csv')
@@ -399,23 +399,23 @@ def main():
     
     print()
     print("=" * 60)
-    print("✅ GENERACIÓN COMPLETADA")
-    print(f"📊 Total registros generados:")
-    print(f"   💰 Ventas: {sales_count:,}")
-    print(f"   👥 Clientes: {customer_count:,}")
-    print(f"   🛍️ Productos: {product_count:,}")
-    print(f"   🏭 Proveedores: {supplier_count:,}")
-    print(f"📁 Archivos creados en: data/raw/")
-    print("📋 Reporte de calidad: data/raw/data_quality_report.json")
+    print("GENERACIÓN COMPLETADA")
+    print(f"Total registros generados:")
+    print(f"   Ventas: {sales_count:,}")
+    print(f"   Clientes: {customer_count:,}")
+    print(f"   🛍Productos: {product_count:,}")
+    print(f"   Proveedores: {supplier_count:,}")
+    print(f"Archivos creados en: data/raw/")
+    print("Reporte de calidad: data/raw/data_quality_report.json")
     print()
-    print("🎯 Casos de calidad incluidos:")
-    print("   ✅ Duplicados (5%)")
-    print("   ✅ Valores nulos (5%)")
-    print("   ✅ Formatos inconsistentes (5-10%)")
-    print("   ✅ Lógica de negocio inválida (2%)")
-    print("   ✅ Problemas de encoding")
+    print("Casos de calidad incluidos:")
+    print("   Duplicados (5%)")
+    print("   Valores nulos (5%)")
+    print("   Formatos inconsistentes (5-10%)")
+    print("   Lógica de negocio inválida (2%)")
+    print("   Problemas de encoding")
     print()
-    print("🚀 ¡Datos listos para tu pipeline ETL!")
+    print("¡Datos listos para tu pipeline ETL!")
 
 if __name__ == "__main__":
     main()

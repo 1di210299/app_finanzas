@@ -46,43 +46,43 @@ class PipelineValidator:
         try:
             import pandas as pd
             dependencies['pandas'] = {'status': 'OK', 'version': pd.__version__}
-            print(f"   ✅ pandas: {pd.__version__}")
+            print(f"   pandas: {pd.__version__}")
         except ImportError as e:
             dependencies['pandas'] = {'status': 'ERROR', 'error': str(e)}
-            print(f"   ❌ pandas: No disponible")
+            print(f"   pandas: No disponible")
         
         # PostgreSQL
         try:
             import psycopg2
             dependencies['psycopg2'] = {'status': 'OK', 'version': 'binary'}
-            print(f"   ✅ psycopg2: Disponible")
+            print(f"   psycopg2: Disponible")
         except ImportError as e:
             dependencies['psycopg2'] = {'status': 'ERROR', 'error': str(e)}
-            print(f"   ❌ psycopg2: No disponible")
+            print(f"   psycopg2: No disponible")
         
         # PySpark (opcional)
         try:
             import pyspark
             dependencies['pyspark'] = {'status': 'OK', 'version': pyspark.__version__}
-            print(f"   ✅ pyspark: {pyspark.__version__}")
+            print(f"   pyspark: {pyspark.__version__}")
         except ImportError:
             dependencies['pyspark'] = {'status': 'OPTIONAL', 'version': 'No instalado'}
-            print(f"   ⚠️ pyspark: No disponible (usando pandas como alternativa)")
+            print(f"   ⚠pyspark: No disponible (usando pandas como alternativa)")
         
         # Redis (opcional)
         try:
             import redis
             dependencies['redis'] = {'status': 'OK', 'version': 'available'}
-            print(f"   ✅ redis: Disponible")
+            print(f"   redis: Disponible")
         except ImportError:
             dependencies['redis'] = {'status': 'OPTIONAL', 'version': 'No instalado'}
-            print(f"   ⚠️ redis: No disponible")
+            print(f"   ⚠redis: No disponible")
         
         return dependencies
 
     def test_postgres_connection(self):
         """Prueba conexión a PostgreSQL"""
-        print("\n🗄️ Probando conexión a PostgreSQL...")
+        print("\n🗄Probando conexión a PostgreSQL...")
         try:
             conn = psycopg2.connect(**self.db_config)
             cursor = conn.cursor()
@@ -90,8 +90,8 @@ class PipelineValidator:
             # Verificar versión de PostgreSQL
             cursor.execute("SELECT version()")
             pg_version = cursor.fetchone()[0]
-            print(f"   ✅ Conectado a PostgreSQL")
-            print(f"   📋 Versión: {pg_version.split(',')[0]}")
+            print(f"   Conectado a PostgreSQL")
+            print(f"   Versión: {pg_version.split(',')[0]}")
             
             # Verificar tablas existentes
             cursor.execute("""
@@ -100,7 +100,7 @@ class PipelineValidator:
                 WHERE table_schema = 'public'
             """)
             tables = cursor.fetchall()
-            print(f"   📊 Tablas encontradas: {len(tables)}")
+            print(f"   Tablas encontradas: {len(tables)}")
             
             # Crear tabla de prueba
             cursor.execute("""
@@ -130,13 +130,13 @@ class PipelineValidator:
             conn.close()
             
             if result and result[0] == test_data:
-                print(f"   ✅ Operaciones CRUD funcionando correctamente")
+                print(f"   Operaciones CRUD funcionando correctamente")
                 return {'status': 'OK', 'tables_count': len(tables), 'version': pg_version}
             else:
                 return {'status': 'ERROR', 'error': 'CRUD operations failed'}
                 
         except Exception as e:
-            print(f"   ❌ Error conectando a PostgreSQL: {str(e)}")
+            print(f"   Error conectando a PostgreSQL: {str(e)}")
             return {'status': 'ERROR', 'error': str(e)}
 
     def validate_data_sources(self):
@@ -196,7 +196,7 @@ class PipelineValidator:
                         }
                     
                     total_records += count
-                    print(f"   ✅ {dataset_name}: {count:,} registros")
+                    print(f"   {dataset_name}: {count:,} registros")
                     
                 except Exception as e:
                     validation_results[dataset_name] = {
@@ -205,21 +205,21 @@ class PipelineValidator:
                         'status': 'ERROR',
                         'error': str(e)
                     }
-                    print(f"   ❌ {dataset_name}: Error - {str(e)}")
+                    print(f"   {dataset_name}: Error - {str(e)}")
             else:
                 validation_results[dataset_name] = {
                     'file': filename,
                     'records': 0,
                     'status': 'NOT_FOUND'
                 }
-                print(f"   ⚠️ {dataset_name}: Archivo no encontrado")
+                print(f"   ⚠{dataset_name}: Archivo no encontrado")
         
-        print(f"\n📊 Total de registros disponibles: {total_records:,}")
+        print(f"\nTotal de registros disponibles: {total_records:,}")
         return validation_results, total_records
 
     def run_etl_simulation(self):
         """Ejecuta simulación ETL completa con pandas"""
-        print("\n⚡ Ejecutando simulación ETL...")
+        print("\nEjecutando simulación ETL...")
         
         try:
             # 1. INGESTA
@@ -275,7 +275,7 @@ class PipelineValidator:
                 enriched_sales = sales_clean
             
             # 4. AGREGACIONES
-            print("   📈 Fase 4: Agregaciones y métricas")
+            print("   Fase 4: Agregaciones y métricas")
             
             if 'total_amount' in enriched_sales.columns:
                 summary = {
@@ -300,7 +300,7 @@ class PipelineValidator:
                 summary = {}
             
             # 5. PERSISTENCIA
-            print("   💾 Fase 5: Persistencia")
+            print("   Fase 5: Persistencia")
             
             # Crear directorio de salida
             os.makedirs(f"{self.data_path}/processed", exist_ok=True)
@@ -330,12 +330,12 @@ class PipelineValidator:
             }
             
         except Exception as e:
-            print(f"   ❌ Error en simulación ETL: {str(e)}")
+            print(f"   Error en simulación ETL: {str(e)}")
             return {'status': 'ERROR', 'error': str(e)}
 
     def generate_comprehensive_report(self):
         """Genera reporte completo de validación"""
-        print("\n📋 Generando reporte completo...")
+        print("\nGenerando reporte completo...")
         
         # Ejecutar todas las validaciones
         dependencies = self.check_dependencies()
@@ -387,9 +387,9 @@ class PipelineValidator:
         return report
 
 def main():
-    print("🚀 VALIDACIÓN COMPLETA DEL PIPELINE ETL")
+    print("VALIDACIÓN COMPLETA DEL PIPELINE ETL")
     print("=" * 60)
-    print("🔧 Usando: pandas + PostgreSQL + Python 3.11")
+    print("Usando: pandas + PostgreSQL + Python 3.11")
     print("=" * 60)
     
     validator = PipelineValidator()
@@ -398,34 +398,34 @@ def main():
         report = validator.generate_comprehensive_report()
         
         print("\n" + "=" * 60)
-        print("✅ RESUMEN EJECUTIVO")
+        print("RESUMEN EJECUTIVO")
         print("=" * 60)
         
         # Estado general
         health = report['pipeline_health']
-        print(f"🎯 ESTADO DEL PIPELINE: {health['overall_status']}")
+        print(f"ESTADO DEL PIPELINE: {health['overall_status']}")
         
         # Dependencias
         deps = report['dependencies_check']
-        print(f"\n📦 DEPENDENCIAS:")
+        print(f"\nDEPENDENCIAS:")
         for dep, info in deps.items():
-            status_icon = "✅" if info['status'] == 'OK' else "⚠️" if info['status'] == 'OPTIONAL' else "❌"
+            status_icon = "[OK]" if info['status'] == 'OK' else "[WARN]" if info['status'] == 'OPTIONAL' else "[FAIL]"
             print(f"   {status_icon} {dep}: {info.get('version', 'N/A')}")
         
         # Infraestructura
         infra = report['infrastructure_status']
-        print(f"\n🏗️ INFRAESTRUCTURA:")
+        print(f"\n🏗INFRAESTRUCTURA:")
         for service, status in infra.items():
             if isinstance(status, dict):
                 status_text = status.get('status', 'UNKNOWN')
             else:
                 status_text = status
-            status_icon = "✅" if status_text == 'OK' else "❌"
+            status_icon = "[OK]" if status_text == 'OK' else "[FAIL]"
             print(f"   {status_icon} {service}: {status_text}")
         
         # Datos
         data_info = report['data_validation']
-        print(f"\n📊 DATOS:")
+        print(f"\nDATOS:")
         print(f"   Registros totales: {data_info['total_source_records']:,}")
         
         datasets_ok = sum(1 for d in data_info['datasets'].values() if d['status'] == 'OK')
@@ -435,33 +435,33 @@ def main():
         # ETL
         etl = report['etl_execution']
         if etl.get('status') == 'SUCCESS':
-            print(f"\n⚡ ETL EXECUTION:")
+            print(f"\nETL EXECUTION:")
             print(f"   Registros procesados: {etl.get('final_records', 0):,}")
             print(f"   Transformaciones: {etl.get('transformations_applied', 0)}")
             
             if 'business_metrics' in etl and etl['business_metrics']:
                 metrics = etl['business_metrics']
-                print(f"\n💰 MÉTRICAS DE NEGOCIO:")
+                print(f"\nMÉTRICAS DE NEGOCIO:")
                 print(f"   Total ventas: ${metrics.get('total_sales', 0):,.2f}")
                 print(f"   Venta promedio: ${metrics.get('avg_sale', 0):,.2f}")
                 print(f"   Transacciones: {metrics.get('total_transactions', 0):,}")
         
-        print(f"\n📅 Validación completada: {report['validation_metadata']['timestamp']}")
+        print(f"\nValidación completada: {report['validation_metadata']['timestamp']}")
         
         if health['overall_status'] == 'HEALTHY':
             print("\n🎉 ¡PIPELINE COMPLETAMENTE FUNCIONAL Y LISTO PARA PRODUCCIÓN!")
-            print("\n📋 ENTREGABLES COMPLETADOS:")
-            print("   ✅ Ingesta de datos (CSV/JSON)")
-            print("   ✅ Limpieza y normalización")
-            print("   ✅ Transformaciones avanzadas") 
-            print("   ✅ Conexión a Data Warehouse")
-            print("   ✅ Monitoreo y logs")
-            print("   ✅ Reporte de validación")
+            print("\nENTREGABLES COMPLETADOS:")
+            print("   Ingesta de datos (CSV/JSON)")
+            print("   Limpieza y normalización")
+            print("   Transformaciones avanzadas") 
+            print("   Conexión a Data Warehouse")
+            print("   Monitoreo y logs")
+            print("   Reporte de validación")
         else:
-            print("\n⚠️ Pipeline funcional con algunos servicios opcionales no disponibles")
+            print("\n⚠Pipeline funcional con algunos servicios opcionales no disponibles")
             
     except Exception as e:
-        print(f"\n❌ Error en validación: {str(e)}")
+        print(f"\nError en validación: {str(e)}")
         return 1
     
     return 0
