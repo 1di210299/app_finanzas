@@ -1,0 +1,3302 @@
+[
+  {
+    "customer_id": "CUST0001",
+    "personal_info": {
+      "first_name": "Silvia",
+      "last_name": "Guerrero",
+      "full_name": "Silvia Guerrero",
+      "birth_date": "1996-08-15"
+    },
+    "contact": {
+      "email": "silvia.guerrero710@gmail.com",
+      "phone": "+51-999-292580",
+      "secondary_phone": "+51-958-431025"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Arequipa",
+      "district": "Distrito 11",
+      "postal_code": "67153"
+    },
+    "registration_date": "2021-12-08",
+    "segment": "STANDARD",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 1649.17,
+      "last_activity": "2025-06-04"
+    }
+  },
+  {
+    "customer_id": "CUST0002",
+    "personal_info": {
+      "first_name": "ANTONIO",
+      "last_name": "Paredes",
+      "full_name": "ANTONIO Paredes",
+      "birth_date": "1955-11-12"
+    },
+    "contact": {
+      "email": "antonio.paredes998@gmail.com",
+      "phone": "+51-999-484148",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Juliaca",
+      "district": "Distrito 18",
+      "postal_code": "51381"
+    },
+    "registration_date": "2021-08-16",
+    "segment": "BRONZE",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 773.38,
+      "last_activity": "2025-05-28"
+    }
+  },
+  {
+    "customer_id": "CUST0003",
+    "personal_info": {
+      "first_name": "Silvia",
+      "last_name": "Romero",
+      "full_name": "Silvia Romero",
+      "birth_date": "1989-07-09"
+    },
+    "contact": {
+      "email": "silvia.romero152@yahoo.com",
+      "phone": "+51-999-652033",
+      "secondary_phone": "+51-952-827594"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Trujillo",
+      "district": "Distrito 1",
+      "postal_code": "97556"
+    },
+    "registration_date": "2023-02-25",
+    "segment": "SILVER",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 9122.91,
+      "last_activity": "2025-06-10"
+    }
+  },
+  {
+    "customer_id": "CUST0004",
+    "personal_info": {
+      "first_name": "Alejandro",
+      "last_name": "Torres",
+      "full_name": "Alejandro Torres",
+      "birth_date": "1964-12-23"
+    },
+    "contact": {
+      "email": "alejandro.torres812@gmail.com",
+      "phone": "+51-999-620208",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Cusco",
+      "district": "Distrito 16",
+      "postal_code": "26002"
+    },
+    "registration_date": "2021-05-28",
+    "segment": "PREMIUM",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 7876.08,
+      "last_activity": "2025-06-22"
+    }
+  },
+  {
+    "customer_id": "CUST0005",
+    "personal_info": {
+      "first_name": "ELENA",
+      "last_name": "Mendoza",
+      "full_name": "ELENA Mendoza",
+      "birth_date": "2002-06-11"
+    },
+    "contact": {
+      "email": "elena.mendoza30@outlook.com",
+      "phone": "+51-999-607185",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Tacna",
+      "district": "Distrito 6",
+      "postal_code": "35768"
+    },
+    "registration_date": "2023-01-05",
+    "segment": "GOLD",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 1967.37,
+      "last_activity": "2025-06-28"
+    }
+  },
+  {
+    "customer_id": "CUST0006",
+    "personal_info": {
+      "first_name": "Andrés",
+      "last_name": "Gutiérrez",
+      "full_name": "Andrés Gutiérrez",
+      "birth_date": "1996-08-15"
+    },
+    "contact": {
+      "email": "andrés.gutiérrez634@hotmail.com",
+      "phone": "956182457",
+      "secondary_phone": "+51-996-820424"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Pucallpa",
+      "district": "Distrito 9",
+      "postal_code": "75716"
+    },
+    "registration_date": "2020-05-06",
+    "segment": "GOLD",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 7270.87,
+      "last_activity": "2025-06-10"
+    }
+  },
+  {
+    "customer_id": "CUST0007",
+    "personal_info": {
+      "first_name": "  Sofía  ",
+      "last_name": "Sánchez",
+      "full_name": "  Sofía   Sánchez",
+      "birth_date": "1955-08-27"
+    },
+    "contact": {
+      "email": "sofía.sánchez296@gmail.com",
+      "phone": "+51-999-754372",
+      "secondary_phone": "+51-965-660001"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Lima",
+      "district": "Distrito 1",
+      "postal_code": "45670"
+    },
+    "registration_date": "2021-07-28",
+    "segment": "BRONZE",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 9750.02,
+      "last_activity": "2025-07-10"
+    }
+  },
+  {
+    "customer_id": "CUST0008",
+    "personal_info": {
+      "first_name": "Beatriz",
+      "last_name": "Torres",
+      "full_name": "Beatriz Torres",
+      "birth_date": "1969-04-14"
+    },
+    "contact": {
+      "email": "beatriz.torres625@gmail.com",
+      "phone": "+51-999-369761",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Sullana",
+      "district": "Distrito 8",
+      "postal_code": "21730"
+    },
+    "registration_date": "2022-02-18",
+    "segment": "GOLD",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 3893.82,
+      "last_activity": "2025-07-16"
+    }
+  },
+  {
+    "customer_id": "CUST0009",
+    "personal_info": {
+      "first_name": "Rosa",
+      "last_name": "Fernández",
+      "full_name": "Rosa Fernández",
+      "birth_date": "1960-11-19"
+    },
+    "contact": {
+      "email": "rosa.fernández155@empresa.com",
+      "phone": "+51-999-124779",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Trujillo",
+      "district": "Distrito 15",
+      "postal_code": "44693"
+    },
+    "registration_date": "2020-08-25",
+    "segment": "SILVER",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 154.5,
+      "last_activity": "2025-05-25"
+    }
+  },
+  {
+    "customer_id": "CUST0010",
+    "personal_info": {
+      "first_name": "Rosa",
+      "last_name": "Gutiérrez",
+      "full_name": "Rosa Gutiérrez",
+      "birth_date": "1964-05-20"
+    },
+    "contact": {
+      "email": "rosa.gutiérrez460@gmail.com",
+      "phone": "+51-999-315921",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ilo",
+      "district": "Distrito 18",
+      "postal_code": "86407"
+    },
+    "registration_date": "2020-02-12",
+    "segment": "SILVER",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 8997.92,
+      "last_activity": "2025-05-04"
+    }
+  },
+  {
+    "customer_id": "CUST0011",
+    "personal_info": {
+      "first_name": "Andrés",
+      "last_name": "Cruz",
+      "full_name": "Andrés Cruz",
+      "birth_date": "1987-11-13"
+    },
+    "contact": {
+      "email": "andrés.cruz357@outlook.com",
+      "phone": "+51-999-408873",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Lima",
+      "district": "Distrito 9",
+      "postal_code": "14311"
+    },
+    "registration_date": "2020-06-06",
+    "segment": "PREMIUM",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 9943.06,
+      "last_activity": "2025-07-10"
+    }
+  },
+  {
+    "customer_id": "CUST0012",
+    "personal_info": {
+      "first_name": "Ana",
+      "last_name": "Rodriguez",
+      "full_name": "Ana Rodriguez",
+      "birth_date": "1958-04-17"
+    },
+    "contact": {
+      "email": "ana.rodriguez137@gmail.com",
+      "phone": "+51-999-589077",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Piura",
+      "district": "Distrito 14",
+      "postal_code": "85204"
+    },
+    "registration_date": "2021-04-02",
+    "segment": "PREMIUM",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 1937.79,
+      "last_activity": "2025-05-13"
+    }
+  },
+  {
+    "customer_id": "CUST0013",
+    "personal_info": {
+      "first_name": "José",
+      "last_name": "López",
+      "full_name": "José López",
+      "birth_date": "1984-11-05"
+    },
+    "contact": {
+      "email": "josé.lópez851@gmail.com",
+      "phone": "+51-999-155052",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ayacucho",
+      "district": "Distrito 19",
+      "postal_code": "56604"
+    },
+    "registration_date": "2020-03-01",
+    "segment": "PREMIUM",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 8946.1,
+      "last_activity": "2025-06-29"
+    }
+  },
+  {
+    "customer_id": "CUST0014",
+    "personal_info": {
+      "first_name": "Silvia",
+      "last_name": "Castillo",
+      "full_name": "Silvia Castillo",
+      "birth_date": "1991-02-24"
+    },
+    "contact": {
+      "email": "silvia.castillo440@hotmail.com",
+      "phone": "+51-999-260047",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Pucallpa",
+      "district": "Distrito 16",
+      "postal_code": "54299"
+    },
+    "registration_date": "2021-09-25",
+    "segment": "GOLD",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 5577.4,
+      "last_activity": "2025-05-13"
+    }
+  },
+  {
+    "customer_id": "CUST0015",
+    "personal_info": {
+      "first_name": "Carmen",
+      "last_name": "Paredes",
+      "full_name": "Carmen Paredes",
+      "birth_date": "1973-11-04"
+    },
+    "contact": {
+      "email": "carmen.paredes214@empresa.com",
+      "phone": "051-998-798-606",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ayacucho",
+      "district": "Distrito 3",
+      "postal_code": "93164"
+    },
+    "registration_date": "2021-03-09",
+    "segment": "BRONZE",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 1718.19,
+      "last_activity": "2025-06-27"
+    }
+  },
+  {
+    "customer_id": "CUST0016",
+    "personal_info": {
+      "first_name": "Diego",
+      "last_name": "Paredes",
+      "full_name": "Diego Paredes",
+      "birth_date": "1985-11-26"
+    },
+    "contact": {
+      "email": "diego.paredes494@outlook.com",
+      "phone": "+51-999-353151",
+      "secondary_phone": "+51-937-800333"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Talara",
+      "district": "Distrito 5",
+      "postal_code": "70920"
+    },
+    "registration_date": "2021-08-19",
+    "segment": "SILVER",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 733.82,
+      "last_activity": "2025-04-28"
+    }
+  },
+  {
+    "customer_id": "CUST0017",
+    "personal_info": {
+      "first_name": "Carmen",
+      "last_name": "Cruz",
+      "full_name": "Carmen Cruz",
+      "birth_date": "1988-09-28"
+    },
+    "contact": {
+      "email": "carmen.cruz615@gmail.com",
+      "phone": "+51-999-709464",
+      "secondary_phone": "+51-923-205552"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Chimbote",
+      "district": "Distrito 10",
+      "postal_code": "46664"
+    },
+    "registration_date": "2021-11-20",
+    "segment": "PREMIUM",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 2739.09,
+      "last_activity": "2025-07-10"
+    }
+  },
+  {
+    "customer_id": "CUST0018",
+    "personal_info": {
+      "first_name": "Elena",
+      "last_name": "Paredes",
+      "full_name": "Elena Paredes",
+      "birth_date": "1995-09-27"
+    },
+    "contact": {
+      "email": "elena.paredes631@gmail.com",
+      "phone": "+51-999-622958",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Lima",
+      "district": "Distrito 7",
+      "postal_code": "36544"
+    },
+    "registration_date": "2021-03-12",
+    "segment": "BRONZE",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 208.59,
+      "last_activity": "2025-07-14"
+    }
+  },
+  {
+    "customer_id": "CUST0019",
+    "personal_info": {
+      "first_name": "Daniel",
+      "last_name": "Vásquez",
+      "full_name": "Daniel Vásquez",
+      "birth_date": "1992-02-27"
+    },
+    "contact": {
+      "email": "daniel.vásquez872@outlook.com",
+      "phone": "+51-999-294503",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Chimbote",
+      "district": "Distrito 18",
+      "postal_code": "36751"
+    },
+    "registration_date": "2020-12-17",
+    "segment": "STANDARD",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 1115.2,
+      "last_activity": "2025-06-15"
+    }
+  },
+  {
+    "customer_id": "CUST0020",
+    "personal_info": {
+      "first_name": "Alejandro",
+      "last_name": "Pérez",
+      "full_name": "Alejandro Pérez",
+      "birth_date": "1986-07-19"
+    },
+    "contact": {
+      "email": "alejandro.pérez504@gmail.com",
+      "phone": "+51-999-792655",
+      "secondary_phone": "+51-954-479497"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ica",
+      "district": "Distrito 9",
+      "postal_code": "49098"
+    },
+    "registration_date": "2023-01-13",
+    "segment": "GOLD",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 9220.61,
+      "last_activity": "2025-05-09"
+    }
+  },
+  {
+    "customer_id": "CUST0021",
+    "personal_info": {
+      "first_name": "Carlos",
+      "last_name": "Delgado",
+      "full_name": "Carlos Delgado",
+      "birth_date": "1960-11-12"
+    },
+    "contact": {
+      "email": "duplicated.email@test.com",
+      "phone": "+51-999-260881",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Arequipa",
+      "district": "Distrito 3",
+      "postal_code": "49736"
+    },
+    "registration_date": "2022-06-18",
+    "segment": "BRONZE",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 4619.37,
+      "last_activity": "2025-07-15"
+    }
+  },
+  {
+    "customer_id": "CUST0022",
+    "personal_info": {
+      "first_name": "Rosa",
+      "last_name": "Paredes",
+      "full_name": "Rosa Paredes",
+      "birth_date": "1974-04-17"
+    },
+    "contact": {
+      "email": "rosa.paredes289@empresa.com",
+      "phone": "+51-999-719117",
+      "secondary_phone": "+51-967-189463"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Puno",
+      "district": "Distrito 20",
+      "postal_code": "63431"
+    },
+    "registration_date": "2023-10-10",
+    "segment": "STANDARD",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 2465.91,
+      "last_activity": "2025-05-20"
+    }
+  },
+  {
+    "customer_id": "CUST0023",
+    "personal_info": {
+      "first_name": "alejandro",
+      "last_name": "Vargas",
+      "full_name": "alejandro Vargas",
+      "birth_date": "1964-10-25"
+    },
+    "contact": {
+      "email": "alejandro.vargas576@gmail.com",
+      "phone": "+51-999-272481",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Lima",
+      "district": "Distrito 10",
+      "postal_code": "89394"
+    },
+    "registration_date": "2021-08-06",
+    "segment": "SILVER",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 1051.87,
+      "last_activity": "2025-06-24"
+    }
+  },
+  {
+    "customer_id": "CUST0024",
+    "personal_info": {
+      "first_name": "Claudia",
+      "last_name": "Vásquez",
+      "full_name": "Claudia Vásquez",
+      "birth_date": "1999-04-17"
+    },
+    "contact": {
+      "email": "duplicated.email@test.com",
+      "phone": "+51-999-297255",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Barranca",
+      "district": "Distrito 18",
+      "postal_code": "40186"
+    },
+    "registration_date": "2021-07-01",
+    "segment": "PREMIUM",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 8542.42,
+      "last_activity": "2025-05-05"
+    }
+  },
+  {
+    "customer_id": "CUST0025",
+    "personal_info": {
+      "first_name": "Claudia",
+      "last_name": "Castillo",
+      "full_name": "Claudia Castillo",
+      "birth_date": "1988-05-18"
+    },
+    "contact": {
+      "email": "claudia.castillo492@empresa.com",
+      "phone": "+51-999-225255",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Lima",
+      "district": "Distrito 3",
+      "postal_code": "55129"
+    },
+    "registration_date": "2021-11-12",
+    "segment": "GOLD",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 7717.85,
+      "last_activity": "2025-04-27"
+    }
+  },
+  {
+    "customer_id": "CUST0026",
+    "personal_info": {
+      "first_name": "Carmen",
+      "last_name": "Jiménez",
+      "full_name": "Carmen Jiménez",
+      "birth_date": "2001-07-15"
+    },
+    "contact": {
+      "email": "carmen.jiménez763@hotmail.com",
+      "phone": "+51-999-230715",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Huancayo",
+      "district": "Distrito 5",
+      "postal_code": "75781"
+    },
+    "registration_date": "2022-08-29",
+    "segment": "BRONZE",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 274.28,
+      "last_activity": "2025-04-26"
+    }
+  },
+  {
+    "customer_id": "CUST0027",
+    "personal_info": {
+      "first_name": "Ana",
+      "last_name": "González",
+      "full_name": "Ana González",
+      "birth_date": "2003-10-15"
+    },
+    "contact": {
+      "email": "ana.gonzález938@outlook.com",
+      "phone": "+51-999-524481",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Barranca",
+      "district": "Distrito 14",
+      "postal_code": "96732"
+    },
+    "registration_date": "2022-03-14",
+    "segment": "PREMIUM",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 2429.67,
+      "last_activity": "2025-07-17"
+    }
+  },
+  {
+    "customer_id": "CUST0028",
+    "personal_info": {
+      "first_name": "Beatriz",
+      "last_name": "Morales",
+      "full_name": "Beatriz Morales",
+      "birth_date": "1974-03-18"
+    },
+    "contact": {
+      "email": "beatriz.morales957@empresa.com",
+      "phone": "+51-999-347862",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Cajamarca",
+      "district": "Distrito 6",
+      "postal_code": "21827"
+    },
+    "registration_date": "2022-02-10",
+    "segment": "BRONZE",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 9980.08,
+      "last_activity": "2025-05-21"
+    }
+  },
+  {
+    "customer_id": "CUST0029",
+    "personal_info": {
+      "first_name": "alejandro",
+      "last_name": "Delgado",
+      "full_name": "alejandro Delgado",
+      "birth_date": "1993-01-03"
+    },
+    "contact": {
+      "email": "alejandro.delgado962@empresa.com",
+      "phone": "+51-999-649461",
+      "secondary_phone": "+51-951-338061"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Piura",
+      "district": "Distrito 5",
+      "postal_code": "93111"
+    },
+    "registration_date": "2023-03-02",
+    "segment": "STANDARD",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 2518.28,
+      "last_activity": "2025-05-28"
+    }
+  },
+  {
+    "customer_id": "CUST0030",
+    "personal_info": {
+      "first_name": "Roberto",
+      "last_name": "Ramos",
+      "full_name": "Roberto Ramos",
+      "birth_date": "1988-09-23"
+    },
+    "contact": {
+      "email": "roberto.ramos433@empresa.com",
+      "phone": "+51-999-913422",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Lima",
+      "district": "Distrito 10",
+      "postal_code": "88398"
+    },
+    "registration_date": "2023-07-30",
+    "segment": "STANDARD",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 2279.06,
+      "last_activity": "2025-06-13"
+    }
+  },
+  {
+    "customer_id": "CUST0031",
+    "personal_info": {
+      "first_name": "Miguel",
+      "last_name": "López",
+      "full_name": "Miguel López",
+      "birth_date": "1978-05-18"
+    },
+    "contact": {
+      "email": "miguel.lópez717@yahoo.com",
+      "phone": "051-939-458-210",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Talara",
+      "district": "Distrito 6",
+      "postal_code": "86798"
+    },
+    "registration_date": "2022-05-23",
+    "segment": "BRONZE",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 5749.22,
+      "last_activity": "2025-05-31"
+    }
+  },
+  {
+    "customer_id": "CUST0032",
+    "personal_info": {
+      "first_name": "Andrés",
+      "last_name": "Vásquez",
+      "full_name": "Andrés Vásquez",
+      "birth_date": "1954-04-24"
+    },
+    "contact": {
+      "email": "andrés.vásquez465@hotmail.com",
+      "phone": "(985) 882-4900",
+      "secondary_phone": "+51-994-856408"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ica",
+      "district": "Distrito 8",
+      "postal_code": "48616"
+    },
+    "registration_date": "2022-06-04",
+    "segment": "BRONZE",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 1869.34,
+      "last_activity": "2025-07-13"
+    }
+  },
+  {
+    "customer_id": "CUST0033",
+    "personal_info": {
+      "first_name": "Fernando",
+      "last_name": "Mendoza",
+      "full_name": "Fernando Mendoza",
+      "birth_date": "1987-02-03"
+    },
+    "contact": {
+      "email": "fernando.mendoza903@gmail.com",
+      "phone": "+51-999-930309",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Sullana",
+      "district": "Distrito 7",
+      "postal_code": "23515"
+    },
+    "registration_date": "2022-12-15",
+    "segment": "SILVER",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 3124.55,
+      "last_activity": "2025-05-24"
+    }
+  },
+  {
+    "customer_id": "CUST0034",
+    "personal_info": {
+      "first_name": "Miguel",
+      "last_name": "Castro",
+      "full_name": "Miguel Castro",
+      "birth_date": "1984-01-14"
+    },
+    "contact": {
+      "email": "miguel.castro646@gmail.com",
+      "phone": "+51-999-807223",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Lima",
+      "district": "Distrito 8",
+      "postal_code": "69896"
+    },
+    "registration_date": "2023-04-09",
+    "segment": "GOLD",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 9740.19,
+      "last_activity": "2025-07-10"
+    }
+  },
+  {
+    "customer_id": "CUST0035",
+    "personal_info": {
+      "first_name": "Alejandro",
+      "last_name": "González",
+      "full_name": "Alejandro González",
+      "birth_date": "1962-09-11"
+    },
+    "contact": {
+      "email": "alejandro.gonzález412@outlook.com",
+      "phone": "+51-999-946368",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Puno",
+      "district": "Distrito 14",
+      "postal_code": "28231"
+    },
+    "registration_date": "2020-02-12",
+    "segment": "STANDARD",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 3523.32,
+      "last_activity": "2025-05-14"
+    }
+  },
+  {
+    "customer_id": "CUST0036",
+    "personal_info": {
+      "first_name": "Andrés",
+      "last_name": "Mendoza",
+      "full_name": "Andrés Mendoza",
+      "birth_date": "1963-06-07"
+    },
+    "contact": {
+      "email": "andrés.mendoza479@hotmail.com",
+      "phone": "+51-999-130889",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Cajamarca",
+      "district": "Distrito 19",
+      "postal_code": "44586"
+    },
+    "registration_date": "2022-12-01",
+    "segment": "GOLD",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 2104.78,
+      "last_activity": "2025-04-20"
+    }
+  },
+  {
+    "customer_id": "CUST0037",
+    "personal_info": {
+      "first_name": "Diego",
+      "last_name": "Mendoza",
+      "full_name": "Diego Mendoza",
+      "birth_date": "1991-12-20"
+    },
+    "contact": {
+      "email": "diego.mendoza50@gmail.com",
+      "phone": "+51-999-204279",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Huancayo",
+      "district": "Distrito 3",
+      "postal_code": "71798"
+    },
+    "registration_date": "2023-03-18",
+    "segment": "PREMIUM",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 7597.38,
+      "last_activity": "2025-06-27"
+    }
+  },
+  {
+    "customer_id": "CUST0038",
+    "personal_info": {
+      "first_name": "Carlos",
+      "last_name": "Ruiz",
+      "full_name": "Carlos Ruiz",
+      "birth_date": "1983-03-08"
+    },
+    "contact": {
+      "email": "carlos.ruiz282@yahoo.com",
+      "phone": "+51-999-781399",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Sullana",
+      "district": "Distrito 9",
+      "postal_code": "63492"
+    },
+    "registration_date": "2023-05-15",
+    "segment": "PREMIUM",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 7660.29,
+      "last_activity": "2025-06-14"
+    }
+  },
+  {
+    "customer_id": "CUST0039",
+    "personal_info": {
+      "first_name": "Carmen",
+      "last_name": "Ramírez",
+      "full_name": "Carmen Ramírez",
+      "birth_date": "1960-04-14"
+    },
+    "contact": {
+      "email": "duplicated.email@test.com",
+      "phone": "+51-999-166624",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ica",
+      "district": "Distrito 7",
+      "postal_code": "84108"
+    },
+    "registration_date": "2023-08-25",
+    "segment": "GOLD",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 6376.37,
+      "last_activity": "2025-04-27"
+    }
+  },
+  {
+    "customer_id": "CUST0040",
+    "personal_info": {
+      "first_name": "Sofía",
+      "last_name": "Vargas",
+      "full_name": "Sofía Vargas",
+      "birth_date": "1956-10-01"
+    },
+    "contact": {
+      "email": "sofía.vargas914@outlook.com",
+      "phone": "+51-999-553120",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Cajamarca",
+      "district": "Distrito 8",
+      "postal_code": "56354"
+    },
+    "registration_date": "2022-04-16",
+    "segment": "PREMIUM",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 4412.08,
+      "last_activity": "2025-05-18"
+    }
+  },
+  {
+    "customer_id": "CUST0041",
+    "personal_info": {
+      "first_name": "Pedro",
+      "last_name": "Guerrero",
+      "full_name": "Pedro Guerrero",
+      "birth_date": "1998-09-29"
+    },
+    "contact": {
+      "email": "pedro.guerrero472@outlook.com",
+      "phone": "+51-999-704398",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ilo",
+      "district": "Distrito 13",
+      "postal_code": "16764"
+    },
+    "registration_date": "2022-02-17",
+    "segment": "GOLD",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 6587.58,
+      "last_activity": "2025-04-26"
+    }
+  },
+  {
+    "customer_id": "CUST0042",
+    "personal_info": {
+      "first_name": "Claudia",
+      "last_name": "Ramírez",
+      "full_name": "Claudia Ramírez",
+      "birth_date": "1991-06-13"
+    },
+    "contact": {
+      "email": "claudia.ramírez80@hotmail.com",
+      "phone": "+51-999-225215",
+      "secondary_phone": "+51-928-189146"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Piura",
+      "district": "Distrito 15",
+      "postal_code": "18868"
+    },
+    "registration_date": "2022-05-21",
+    "segment": "SILVER",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 3777.08,
+      "last_activity": "2025-07-07"
+    }
+  },
+  {
+    "customer_id": "CUST0043",
+    "personal_info": {
+      "first_name": "RICARDO",
+      "last_name": "Pérez",
+      "full_name": "RICARDO Pérez",
+      "birth_date": "1997-01-15"
+    },
+    "contact": {
+      "email": "ricardo.pérez610@outlook.com",
+      "phone": "+51-999-601932",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ica",
+      "district": "Distrito 15",
+      "postal_code": "84135"
+    },
+    "registration_date": "2022-04-22",
+    "segment": "BRONZE",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 4279.95,
+      "last_activity": "2025-05-05"
+    }
+  },
+  {
+    "customer_id": "CUST0044",
+    "personal_info": {
+      "first_name": "Claudia",
+      "last_name": "Castro",
+      "full_name": "Claudia Castro",
+      "birth_date": "1996-05-17"
+    },
+    "contact": {
+      "email": "claudia.castro886@yahoo.com",
+      "phone": "+51-999-414664",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ayacucho",
+      "district": "Distrito 6",
+      "postal_code": "60548"
+    },
+    "registration_date": "2022-01-11",
+    "segment": "PREMIUM",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 7700.39,
+      "last_activity": "2025-05-30"
+    }
+  },
+  {
+    "customer_id": "CUST0045",
+    "personal_info": {
+      "first_name": "Patricia",
+      "last_name": "Morales",
+      "full_name": "Patricia Morales",
+      "birth_date": "1963-09-03"
+    },
+    "contact": {
+      "email": "patricia.morales155@yahoo.com",
+      "phone": "+51-999-501148",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Pucallpa",
+      "district": "Distrito 4",
+      "postal_code": "33591"
+    },
+    "registration_date": "2020-04-24",
+    "segment": "SILVER",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 3506.12,
+      "last_activity": "2025-07-15"
+    }
+  },
+  {
+    "customer_id": "CUST0046",
+    "personal_info": {
+      "first_name": "Alejandro",
+      "last_name": "Herrera",
+      "full_name": "Alejandro Herrera",
+      "birth_date": "1988-06-06"
+    },
+    "contact": {
+      "email": "alejandro.herrera77@hotmail.com",
+      "phone": "+51-999-639663",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Juliaca",
+      "district": "Distrito 5",
+      "postal_code": "90353"
+    },
+    "registration_date": "2023-07-23",
+    "segment": "BRONZE",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 7149.55,
+      "last_activity": "2025-06-07"
+    }
+  },
+  {
+    "customer_id": "CUST0047",
+    "personal_info": {
+      "first_name": "Alejandro",
+      "last_name": "Ramírez",
+      "full_name": "Alejandro Ramírez",
+      "birth_date": "1954-01-21"
+    },
+    "contact": {
+      "email": "alejandro.ramírez940@empresa.com",
+      "phone": "051-951-858-481",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Puno",
+      "district": "Distrito 3",
+      "postal_code": "44028"
+    },
+    "registration_date": "2021-04-27",
+    "segment": "GOLD",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 9533.97,
+      "last_activity": "2025-04-26"
+    }
+  },
+  {
+    "customer_id": "CUST0048",
+    "personal_info": {
+      "first_name": "Fernando",
+      "last_name": "Rodriguez",
+      "full_name": "Fernando Rodriguez",
+      "birth_date": "1994-07-07"
+    },
+    "contact": {
+      "email": "fernando.rodriguez884@gmail.com",
+      "phone": "+51-999-666666",
+      "secondary_phone": "+51-983-943143"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ayacucho",
+      "district": "Distrito 17",
+      "postal_code": "48299"
+    },
+    "registration_date": "2023-04-28",
+    "segment": "BRONZE",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 9335.92,
+      "last_activity": "2025-05-27"
+    }
+  },
+  {
+    "customer_id": "CUST0049",
+    "personal_info": {
+      "first_name": "Rosa",
+      "last_name": "Romero",
+      "full_name": "Rosa Romero",
+      "birth_date": "1953-11-04"
+    },
+    "contact": {
+      "email": "rosa.romero605@outlook.com",
+      "phone": "+51-999-235028",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ilo",
+      "district": "Distrito 18",
+      "postal_code": "18330"
+    },
+    "registration_date": "2020-08-07",
+    "segment": "GOLD",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 1260.96,
+      "last_activity": "2025-07-02"
+    }
+  },
+  {
+    "customer_id": "CUST0050",
+    "personal_info": {
+      "first_name": "Daniel",
+      "last_name": "Delgado",
+      "full_name": "Daniel Delgado",
+      "birth_date": "2003-02-08"
+    },
+    "contact": {
+      "email": "daniel.delgado335@empresa.com",
+      "phone": "+51-999-935925",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Chincha",
+      "district": "Distrito 17",
+      "postal_code": "93954"
+    },
+    "registration_date": "2022-04-03",
+    "segment": "STANDARD",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 5532.02,
+      "last_activity": "2025-06-06"
+    }
+  },
+  {
+    "customer_id": "CUST0051",
+    "personal_info": {
+      "first_name": "Carmen",
+      "last_name": "Vargas",
+      "full_name": "Carmen Vargas",
+      "birth_date": "1968-11-05"
+    },
+    "contact": {
+      "email": "carmen.vargas270@outlook.com",
+      "phone": "+51-999-813912",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ilo",
+      "district": "Distrito 1",
+      "postal_code": "34167"
+    },
+    "registration_date": "2023-02-19",
+    "segment": "BRONZE",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 8732.23,
+      "last_activity": "2025-04-26"
+    }
+  },
+  {
+    "customer_id": "CUST0052",
+    "personal_info": {
+      "first_name": "Manuel",
+      "last_name": "Cruz",
+      "full_name": "Manuel Cruz",
+      "birth_date": "2002-06-18"
+    },
+    "contact": {
+      "email": "manuel.cruz350@hotmail.com",
+      "phone": "+51961946971",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ica",
+      "district": "Distrito 10",
+      "postal_code": "22958"
+    },
+    "registration_date": "2022-02-03",
+    "segment": "STANDARD",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 8249.61,
+      "last_activity": "2025-05-05"
+    }
+  },
+  {
+    "customer_id": "CUST0053",
+    "personal_info": {
+      "first_name": "BEATRIZ",
+      "last_name": "Flores",
+      "full_name": "BEATRIZ Flores",
+      "birth_date": "1971-09-25"
+    },
+    "contact": {
+      "email": "beatriz.flores396@yahoo.com",
+      "phone": "+51-999-761322",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Cajamarca",
+      "district": "Distrito 7",
+      "postal_code": "56155"
+    },
+    "registration_date": "2022-11-28",
+    "segment": "PREMIUM",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 1404.22,
+      "last_activity": "2025-06-07"
+    }
+  },
+  {
+    "customer_id": "CUST0054",
+    "personal_info": {
+      "first_name": "María",
+      "last_name": "Gutiérrez",
+      "full_name": "María Gutiérrez",
+      "birth_date": "1996-02-05"
+    },
+    "contact": {
+      "email": "maría.gutiérrez260@hotmail.com",
+      "phone": "+51-999-880799",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Puno",
+      "district": "Distrito 3",
+      "postal_code": "77483"
+    },
+    "registration_date": "2020-09-01",
+    "segment": "PREMIUM",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 6791.16,
+      "last_activity": "2025-05-25"
+    }
+  },
+  {
+    "customer_id": "CUST0055",
+    "personal_info": {
+      "first_name": "Mónica",
+      "last_name": "Ramos",
+      "full_name": "Mónica Ramos",
+      "birth_date": "1957-09-26"
+    },
+    "contact": {
+      "email": "mónica.ramos717@outlook.com",
+      "phone": "940573709",
+      "secondary_phone": "+51-983-856746"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Juliaca",
+      "district": "Distrito 20",
+      "postal_code": "64821"
+    },
+    "registration_date": "2023-08-01",
+    "segment": "PREMIUM",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 602.65,
+      "last_activity": "2025-06-21"
+    }
+  },
+  {
+    "customer_id": "CUST0056",
+    "personal_info": {
+      "first_name": "José",
+      "last_name": "Herrera",
+      "full_name": "José Herrera",
+      "birth_date": "1985-09-05"
+    },
+    "contact": {
+      "email": "josé.herrera38@hotmail.com",
+      "phone": "+51-999-958357",
+      "secondary_phone": "+51-914-753715"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Talara",
+      "district": "Distrito 8",
+      "postal_code": "23980"
+    },
+    "registration_date": "2023-05-10",
+    "segment": "PREMIUM",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 413.9,
+      "last_activity": "2025-07-01"
+    }
+  },
+  {
+    "customer_id": "CUST0057",
+    "personal_info": {
+      "first_name": "Mónica",
+      "last_name": "Romero",
+      "full_name": "Mónica Romero",
+      "birth_date": "1983-02-25"
+    },
+    "contact": {
+      "email": "mónica.romero926@outlook.com",
+      "phone": "+51-999-158241",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ica",
+      "district": "Distrito 16",
+      "postal_code": "62167"
+    },
+    "registration_date": "2023-08-17",
+    "segment": "SILVER",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 343.08,
+      "last_activity": "2025-06-04"
+    }
+  },
+  {
+    "customer_id": "CUST0058",
+    "personal_info": {
+      "first_name": "Rosa",
+      "last_name": "Pérez",
+      "full_name": "Rosa Pérez",
+      "birth_date": "1992-01-28"
+    },
+    "contact": {
+      "email": "rosa.pérez660@yahoo.com",
+      "phone": "+51-999-675100",
+      "secondary_phone": "+51-942-525029"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Piura",
+      "district": "Distrito 10",
+      "postal_code": "87912"
+    },
+    "registration_date": "2023-02-05",
+    "segment": "GOLD",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 2687.51,
+      "last_activity": "2025-05-23"
+    }
+  },
+  {
+    "customer_id": "CUST0059",
+    "personal_info": {
+      "first_name": "Carmen",
+      "last_name": "Herrera",
+      "full_name": "Carmen Herrera",
+      "birth_date": "1965-04-24"
+    },
+    "contact": {
+      "email": "carmen.herrera239@yahoo.com",
+      "phone": "+51-999-683145",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ayacucho",
+      "district": "Distrito 6",
+      "postal_code": "64007"
+    },
+    "registration_date": "2022-08-03",
+    "segment": "STANDARD",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 1901.2,
+      "last_activity": "2025-06-23"
+    }
+  },
+  {
+    "customer_id": "CUST0060",
+    "personal_info": {
+      "first_name": "Ricardo",
+      "last_name": "Pérez",
+      "full_name": "Ricardo Pérez",
+      "birth_date": "1987-04-07"
+    },
+    "contact": {
+      "email": "ricardo.pérez532@empresa.com",
+      "phone": "+51-999-995152",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Tacna",
+      "district": "Distrito 12",
+      "postal_code": "72219"
+    },
+    "registration_date": "2020-09-18",
+    "segment": "PREMIUM",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 4938.17,
+      "last_activity": "2025-06-01"
+    }
+  },
+  {
+    "customer_id": "CUST0061",
+    "personal_info": {
+      "first_name": "Mónica",
+      "last_name": "Rodriguez",
+      "full_name": "Mónica Rodriguez",
+      "birth_date": "1976-10-28"
+    },
+    "contact": {
+      "email": "mónica.rodriguez636@yahoo.com",
+      "phone": "+51-999-430192",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ica",
+      "district": "Distrito 20",
+      "postal_code": "64477"
+    },
+    "registration_date": "2021-01-11",
+    "segment": "PREMIUM",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 9853.54,
+      "last_activity": "2025-07-06"
+    }
+  },
+  {
+    "customer_id": "CUST0062",
+    "personal_info": {
+      "first_name": "Ana",
+      "last_name": "Vásquez",
+      "full_name": "Ana Vásquez",
+      "birth_date": "1981-05-06"
+    },
+    "contact": {
+      "email": "ana.vásquez883@empresa.com",
+      "phone": "+51-999-523547",
+      "secondary_phone": "+51-947-385687"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ayacucho",
+      "district": "Distrito 14",
+      "postal_code": "52729"
+    },
+    "registration_date": "2021-10-12",
+    "segment": "STANDARD",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 3744.0,
+      "last_activity": "2025-05-24"
+    }
+  },
+  {
+    "customer_id": "CUST0063",
+    "personal_info": {
+      "first_name": "Patricia",
+      "last_name": "Ramos",
+      "full_name": "Patricia Ramos",
+      "birth_date": "1992-09-19"
+    },
+    "contact": {
+      "email": "patricia.ramos535@hotmail.com",
+      "phone": "+51-999-946085",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Arequipa",
+      "district": "Distrito 15",
+      "postal_code": "79358"
+    },
+    "registration_date": "2021-11-15",
+    "segment": "STANDARD",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 3310.32,
+      "last_activity": "2025-07-08"
+    }
+  },
+  {
+    "customer_id": "CUST0064",
+    "personal_info": {
+      "first_name": "Rosa",
+      "last_name": "López",
+      "full_name": "Rosa López",
+      "birth_date": "1994-01-30"
+    },
+    "contact": {
+      "email": "rosa.lópez473@empresa.com",
+      "phone": "+51-999-394547",
+      "secondary_phone": "+51-938-213018"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ilo",
+      "district": "Distrito 18",
+      "postal_code": "97528"
+    },
+    "registration_date": "2022-11-01",
+    "segment": "BRONZE",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 6191.33,
+      "last_activity": "2025-05-30"
+    }
+  },
+  {
+    "customer_id": "CUST0065",
+    "personal_info": {
+      "first_name": "Manuel",
+      "last_name": "Delgado",
+      "full_name": "Manuel Delgado",
+      "birth_date": "1956-02-01"
+    },
+    "contact": {
+      "email": "manuel.delgado739@empresa.com",
+      "phone": "+51-999-927942",
+      "secondary_phone": "+51-949-215738"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ayacucho",
+      "district": "Distrito 12",
+      "postal_code": "44105"
+    },
+    "registration_date": "2020-06-10",
+    "segment": "SILVER",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 9033.37,
+      "last_activity": "2025-06-11"
+    }
+  },
+  {
+    "customer_id": "CUST0066",
+    "personal_info": {
+      "first_name": "María",
+      "last_name": "Paredes",
+      "full_name": "María Paredes",
+      "birth_date": "1992-10-23"
+    },
+    "contact": {
+      "email": "maría.paredes393@hotmail.com",
+      "phone": "+51-999-766745",
+      "secondary_phone": "+51-949-670690"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Puno",
+      "district": "Distrito 16",
+      "postal_code": "36867"
+    },
+    "registration_date": "2021-01-07",
+    "segment": "GOLD",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 9682.68,
+      "last_activity": "2025-06-02"
+    }
+  },
+  {
+    "customer_id": "CUST0067",
+    "personal_info": {
+      "first_name": "Carmen",
+      "last_name": "Castro",
+      "full_name": "Carmen Castro",
+      "birth_date": "1998-10-11"
+    },
+    "contact": {
+      "email": "carmen.castro177@empresa.com",
+      "phone": "+51-999-454017",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ica",
+      "district": "Distrito 4",
+      "postal_code": "84707"
+    },
+    "registration_date": "2023-06-26",
+    "segment": "STANDARD",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 5635.34,
+      "last_activity": "2025-05-10"
+    }
+  },
+  {
+    "customer_id": "CUST0068",
+    "personal_info": {
+      "first_name": "Carlos",
+      "last_name": "González",
+      "full_name": "Carlos González",
+      "birth_date": "1963-12-07"
+    },
+    "contact": {
+      "email": "carlos.gonzález661@empresa.com",
+      "phone": "+51-999-713680",
+      "secondary_phone": "+51-962-897889"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Trujillo",
+      "district": "Distrito 4",
+      "postal_code": "93369"
+    },
+    "registration_date": "2020-10-07",
+    "segment": "PREMIUM",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 6090.96,
+      "last_activity": "2025-05-19"
+    }
+  },
+  {
+    "customer_id": "CUST0069",
+    "personal_info": {
+      "first_name": "Elena",
+      "last_name": "Mendoza",
+      "full_name": "Elena Mendoza",
+      "birth_date": "1969-06-19"
+    },
+    "contact": {
+      "email": "elena.mendoza819@hotmail.com",
+      "phone": "+51-999-229997",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Talara",
+      "district": "Distrito 15",
+      "postal_code": "91669"
+    },
+    "registration_date": "2021-05-25",
+    "segment": "SILVER",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 484.78,
+      "last_activity": "2025-07-05"
+    }
+  },
+  {
+    "customer_id": "CUST0070",
+    "personal_info": {
+      "first_name": "Carlos",
+      "last_name": "Pérez",
+      "full_name": "Carlos Pérez",
+      "birth_date": "1956-03-07"
+    },
+    "contact": {
+      "email": "carlos.pérez270@gmail.com",
+      "phone": "+51-999-401593",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Arequipa",
+      "district": "Distrito 5",
+      "postal_code": "24907"
+    },
+    "registration_date": "2020-08-08",
+    "segment": "BRONZE",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 798.93,
+      "last_activity": "2025-07-03"
+    }
+  },
+  {
+    "customer_id": "CUST0071",
+    "personal_info": {
+      "first_name": "Sofía",
+      "last_name": "Guerrero",
+      "full_name": "Sofía Guerrero",
+      "birth_date": "1979-10-12"
+    },
+    "contact": {
+      "email": "sofía.guerrero656@outlook.com",
+      "phone": "(964) 551-1816",
+      "secondary_phone": "+51-984-873395"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Barranca",
+      "district": "Distrito 13",
+      "postal_code": "40183"
+    },
+    "registration_date": "2023-02-17",
+    "segment": "SILVER",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 1241.7,
+      "last_activity": "2025-07-09"
+    }
+  },
+  {
+    "customer_id": "CUST0072",
+    "personal_info": {
+      "first_name": "Miguel",
+      "last_name": "Flores",
+      "full_name": "Miguel Flores",
+      "birth_date": "1980-06-04"
+    },
+    "contact": {
+      "email": "miguel.flores934@yahoo.com",
+      "phone": "+51-999-243746",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Piura",
+      "district": "Distrito 3",
+      "postal_code": "47064"
+    },
+    "registration_date": "2021-10-22",
+    "segment": "SILVER",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 9986.8,
+      "last_activity": "2025-06-27"
+    }
+  },
+  {
+    "customer_id": "CUST0073",
+    "personal_info": {
+      "first_name": "María",
+      "last_name": "Ruiz",
+      "full_name": "María Ruiz",
+      "birth_date": "1955-06-08"
+    },
+    "contact": {
+      "email": "maría.ruiz304@hotmail.com",
+      "phone": "+51-999-469637",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Arequipa",
+      "district": "Distrito 13",
+      "postal_code": "18228"
+    },
+    "registration_date": "2023-04-20",
+    "segment": "PREMIUM",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 7054.88,
+      "last_activity": "2025-06-22"
+    }
+  },
+  {
+    "customer_id": "CUST0074",
+    "personal_info": {
+      "first_name": "Carmen",
+      "last_name": "García",
+      "full_name": "Carmen García",
+      "birth_date": "1971-05-27"
+    },
+    "contact": {
+      "email": "carmen.garcía474@empresa.com",
+      "phone": "+51-999-624201",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Trujillo",
+      "district": "Distrito 12",
+      "postal_code": "68574"
+    },
+    "registration_date": "2021-04-25",
+    "segment": "PREMIUM",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 4235.66,
+      "last_activity": "2025-07-19"
+    }
+  },
+  {
+    "customer_id": "CUST0075",
+    "personal_info": {
+      "first_name": "Ana",
+      "last_name": "Flores",
+      "full_name": "Ana Flores",
+      "birth_date": "1964-10-08"
+    },
+    "contact": {
+      "email": "ana.flores201@outlook.com",
+      "phone": "+51-999-649195",
+      "secondary_phone": "+51-992-606109"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Talara",
+      "district": "Distrito 2",
+      "postal_code": "72769"
+    },
+    "registration_date": "2023-04-09",
+    "segment": "GOLD",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 6862.87,
+      "last_activity": "2025-04-20"
+    }
+  },
+  {
+    "customer_id": "CUST0076",
+    "personal_info": {
+      "first_name": "Fernando",
+      "last_name": "Fernández",
+      "full_name": "Fernando Fernández",
+      "birth_date": "1953-01-08"
+    },
+    "contact": {
+      "email": "fernando.fernández986@hotmail.com",
+      "phone": "+51-999-825221",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ayacucho",
+      "district": "Distrito 10",
+      "postal_code": "80248"
+    },
+    "registration_date": "2020-10-01",
+    "segment": "BRONZE",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 3153.83,
+      "last_activity": "2025-04-23"
+    }
+  },
+  {
+    "customer_id": "CUST0077",
+    "personal_info": {
+      "first_name": "Elena",
+      "last_name": "Ramos",
+      "full_name": "Elena Ramos",
+      "birth_date": "1998-04-22"
+    },
+    "contact": {
+      "email": "elena.ramos607@gmail.com",
+      "phone": "+51-999-382402",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Cusco",
+      "district": "Distrito 19",
+      "postal_code": "18050"
+    },
+    "registration_date": "2020-06-10",
+    "segment": "STANDARD",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 333.47,
+      "last_activity": "2025-05-30"
+    }
+  },
+  {
+    "customer_id": "CUST0078",
+    "personal_info": {
+      "first_name": "Alejandro",
+      "last_name": "Ramírez",
+      "full_name": "Alejandro Ramírez",
+      "birth_date": "1979-06-28"
+    },
+    "contact": {
+      "email": "alejandro.ramírez429@yahoo.com",
+      "phone": "+51-999-705309",
+      "secondary_phone": "+51-978-243740"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Trujillo",
+      "district": "Distrito 14",
+      "postal_code": "67859"
+    },
+    "registration_date": "2022-09-10",
+    "segment": "SILVER",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 118.33,
+      "last_activity": "2025-06-03"
+    }
+  },
+  {
+    "customer_id": "CUST0079",
+    "personal_info": {
+      "first_name": "Manuel",
+      "last_name": "Ruiz",
+      "full_name": "Manuel Ruiz",
+      "birth_date": "1998-06-16"
+    },
+    "contact": {
+      "email": "manuel.ruiz542@gmail.com",
+      "phone": "+51-999-730031",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Cusco",
+      "district": "Distrito 10",
+      "postal_code": "43169"
+    },
+    "registration_date": "2021-10-28",
+    "segment": "STANDARD",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 3534.06,
+      "last_activity": "2025-04-29"
+    }
+  },
+  {
+    "customer_id": "CUST0080",
+    "personal_info": {
+      "first_name": "Ricardo",
+      "last_name": "Castro",
+      "full_name": "Ricardo Castro",
+      "birth_date": "1957-11-02"
+    },
+    "contact": {
+      "email": "ricardo.castro686@hotmail.com",
+      "phone": "954255486",
+      "secondary_phone": "+51-943-297688"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Tacna",
+      "district": "Distrito 1",
+      "postal_code": "93221"
+    },
+    "registration_date": "2020-07-08",
+    "segment": "STANDARD",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 7639.9,
+      "last_activity": "2025-06-17"
+    }
+  },
+  {
+    "customer_id": "CUST0081",
+    "personal_info": {
+      "first_name": "Diego",
+      "last_name": "Castillo",
+      "full_name": "Diego Castillo",
+      "birth_date": "1959-09-16"
+    },
+    "contact": {
+      "email": "diego.castillo506@yahoo.com",
+      "phone": "+51-999-763794",
+      "secondary_phone": "+51-907-828659"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Barranca",
+      "district": "Distrito 16",
+      "postal_code": "80013"
+    },
+    "registration_date": "2022-03-25",
+    "segment": "BRONZE",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 7079.14,
+      "last_activity": "2025-05-21"
+    }
+  },
+  {
+    "customer_id": "CUST0082",
+    "personal_info": {
+      "first_name": "Claudia",
+      "last_name": "Medina",
+      "full_name": "Claudia Medina",
+      "birth_date": "1992-02-17"
+    },
+    "contact": {
+      "email": "claudia.medina86@yahoo.com",
+      "phone": "+51-999-716088",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Arequipa",
+      "district": "Distrito 5",
+      "postal_code": "78124"
+    },
+    "registration_date": "2022-01-15",
+    "segment": "PREMIUM",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 2562.41,
+      "last_activity": "2025-04-25"
+    }
+  },
+  {
+    "customer_id": "CUST0083",
+    "personal_info": {
+      "first_name": "Isabel",
+      "last_name": "Jiménez",
+      "full_name": "Isabel Jiménez",
+      "birth_date": "1976-01-07"
+    },
+    "contact": {
+      "email": "isabel.jiménez712@empresa.com",
+      "phone": "+51-999-892588",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Chimbote",
+      "district": "Distrito 12",
+      "postal_code": "76943"
+    },
+    "registration_date": "2021-06-07",
+    "segment": "BRONZE",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 810.32,
+      "last_activity": "2025-07-03"
+    }
+  },
+  {
+    "customer_id": "CUST0084",
+    "personal_info": {
+      "first_name": "Carlos",
+      "last_name": "Ruiz",
+      "full_name": "Carlos Ruiz",
+      "birth_date": "2001-02-09"
+    },
+    "contact": {
+      "email": "carlos.ruiz622@outlook.com",
+      "phone": "+51-999-529884",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Piura",
+      "district": "Distrito 13",
+      "postal_code": "90650"
+    },
+    "registration_date": "2022-08-02",
+    "segment": "PREMIUM",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 6876.58,
+      "last_activity": "2025-06-13"
+    }
+  },
+  {
+    "customer_id": "CUST0085",
+    "personal_info": {
+      "first_name": "Victoria",
+      "last_name": "Medina",
+      "full_name": "Victoria Medina",
+      "birth_date": "2003-08-13"
+    },
+    "contact": {
+      "email": "victoria.medina839@empresa.com",
+      "phone": "+51-999-323622",
+      "secondary_phone": "+51-999-994901"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Juliaca",
+      "district": "Distrito 17",
+      "postal_code": "13855"
+    },
+    "registration_date": "2022-04-06",
+    "segment": "PREMIUM",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 1250.24,
+      "last_activity": "2025-05-29"
+    }
+  },
+  {
+    "customer_id": "CUST0086",
+    "personal_info": {
+      "first_name": "José",
+      "last_name": "Torres",
+      "full_name": "José Torres",
+      "birth_date": "1979-11-10"
+    },
+    "contact": {
+      "email": "josé.torres235@empresa.com",
+      "phone": "+51940412908",
+      "secondary_phone": "+51-967-869688"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Chimbote",
+      "district": "Distrito 20",
+      "postal_code": "54388"
+    },
+    "registration_date": "2021-04-01",
+    "segment": "SILVER",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 5266.49,
+      "last_activity": "2025-06-01"
+    }
+  },
+  {
+    "customer_id": "CUST0087",
+    "personal_info": {
+      "first_name": "Gabriela",
+      "last_name": "Pérez",
+      "full_name": "Gabriela Pérez",
+      "birth_date": "1964-04-12"
+    },
+    "contact": {
+      "email": "gabriela.pérez272@yahoo.com",
+      "phone": "+51-999-741806",
+      "secondary_phone": "+51-959-860846"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ilo",
+      "district": "Distrito 8",
+      "postal_code": "50970"
+    },
+    "registration_date": "2022-12-21",
+    "segment": "STANDARD",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 5099.17,
+      "last_activity": "2025-05-24"
+    }
+  },
+  {
+    "customer_id": "CUST0088",
+    "personal_info": {
+      "first_name": "Elena",
+      "last_name": "Gutiérrez",
+      "full_name": "Elena Gutiérrez",
+      "birth_date": "1976-05-20"
+    },
+    "contact": {
+      "email": "elena.gutiérrez318@hotmail.com",
+      "phone": "+51990353797",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Puno",
+      "district": "Distrito 7",
+      "postal_code": "15270"
+    },
+    "registration_date": "2020-02-16",
+    "segment": "BRONZE",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 2832.6,
+      "last_activity": "2025-06-23"
+    }
+  },
+  {
+    "customer_id": "CUST0089",
+    "personal_info": {
+      "first_name": "Victoria",
+      "last_name": "Ramos",
+      "full_name": "Victoria Ramos",
+      "birth_date": "1966-12-24"
+    },
+    "contact": {
+      "email": "victoria.ramos628@yahoo.com",
+      "phone": "+51-999-910060",
+      "secondary_phone": "+51-952-306592"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ica",
+      "district": "Distrito 9",
+      "postal_code": "57526"
+    },
+    "registration_date": "2020-05-16",
+    "segment": "GOLD",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 3536.0,
+      "last_activity": "2025-06-21"
+    }
+  },
+  {
+    "customer_id": "CUST0090",
+    "personal_info": {
+      "first_name": "Ana",
+      "last_name": "Paredes",
+      "full_name": "Ana Paredes",
+      "birth_date": "1993-02-17"
+    },
+    "contact": {
+      "email": "ana.paredes882@yahoo.com",
+      "phone": "+51-999-649235",
+      "secondary_phone": "+51-956-480046"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Arequipa",
+      "district": "Distrito 12",
+      "postal_code": "99868"
+    },
+    "registration_date": "2022-12-08",
+    "segment": "PREMIUM",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 1746.72,
+      "last_activity": "2025-04-25"
+    }
+  },
+  {
+    "customer_id": "CUST0091",
+    "personal_info": {
+      "first_name": "Diego",
+      "last_name": "Morales",
+      "full_name": "Diego Morales",
+      "birth_date": "1990-08-14"
+    },
+    "contact": {
+      "email": "diego.morales500@gmail.com",
+      "phone": "+51-999-457913",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ica",
+      "district": "Distrito 15",
+      "postal_code": "81441"
+    },
+    "registration_date": "2022-06-01",
+    "segment": "STANDARD",
+    "status": "SUSPENDED",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 6039.87,
+      "last_activity": "2025-04-25"
+    }
+  },
+  {
+    "customer_id": "CUST0092",
+    "personal_info": {
+      "first_name": "Diego",
+      "last_name": "Ramírez",
+      "full_name": "Diego Ramírez",
+      "birth_date": "1971-10-12"
+    },
+    "contact": {
+      "email": "diego.ramírez239@outlook.com",
+      "phone": "+51-999-418374",
+      "secondary_phone": "+51-996-396776"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Juliaca",
+      "district": "Distrito 3",
+      "postal_code": "98035"
+    },
+    "registration_date": "2020-08-30",
+    "segment": "STANDARD",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 5583.42,
+      "last_activity": "2025-05-24"
+    }
+  },
+  {
+    "customer_id": "CUST0093",
+    "personal_info": {
+      "first_name": "Laura",
+      "last_name": "Ruiz",
+      "full_name": "Laura Ruiz",
+      "birth_date": "1955-03-02"
+    },
+    "contact": {
+      "email": "laura.ruiz265@gmail.com",
+      "phone": "+51-999-125691",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Piura",
+      "district": "Distrito 20",
+      "postal_code": "30018"
+    },
+    "registration_date": "2021-09-30",
+    "segment": "BRONZE",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 2371.75,
+      "last_activity": "2025-05-19"
+    }
+  },
+  {
+    "customer_id": "CUST0094",
+    "personal_info": {
+      "first_name": "Andrés",
+      "last_name": "Jiménez",
+      "full_name": "Andrés Jiménez",
+      "birth_date": "1969-02-25"
+    },
+    "contact": {
+      "email": "andrés.jiménez586@empresa.com",
+      "phone": "+51-999-719568",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ica",
+      "district": "Distrito 3",
+      "postal_code": "83397"
+    },
+    "registration_date": "2023-09-09",
+    "segment": "GOLD",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 1598.3,
+      "last_activity": "2025-07-09"
+    }
+  },
+  {
+    "customer_id": "CUST0095",
+    "personal_info": {
+      "first_name": "JUAN",
+      "last_name": "Castro",
+      "full_name": "JUAN Castro",
+      "birth_date": "1963-03-09"
+    },
+    "contact": {
+      "email": "juan.castro870@gmail.com",
+      "phone": "+51-999-445956",
+      "secondary_phone": "+51-949-496362"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Cajamarca",
+      "district": "Distrito 5",
+      "postal_code": "42400"
+    },
+    "registration_date": "2021-06-06",
+    "segment": "STANDARD",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 381.23,
+      "last_activity": "2025-06-26"
+    }
+  },
+  {
+    "customer_id": "CUST0096",
+    "personal_info": {
+      "first_name": "Sofía",
+      "last_name": "García",
+      "full_name": "Sofía García",
+      "birth_date": "1973-03-07"
+    },
+    "contact": {
+      "email": "sofía.garcía274@empresa.com",
+      "phone": "+51-999-196775",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Cajamarca",
+      "district": "Distrito 14",
+      "postal_code": "98012"
+    },
+    "registration_date": "2023-09-06",
+    "segment": "SILVER",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 1434.9,
+      "last_activity": "2025-07-02"
+    }
+  },
+  {
+    "customer_id": "CUST0097",
+    "personal_info": {
+      "first_name": "Patricia",
+      "last_name": "Guerrero",
+      "full_name": "Patricia Guerrero",
+      "birth_date": "1964-04-03"
+    },
+    "contact": {
+      "email": "patricia.guerrero703@empresa.com",
+      "phone": "+51-999-805233",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Cusco",
+      "district": "Distrito 6",
+      "postal_code": "53341"
+    },
+    "registration_date": "2022-03-27",
+    "segment": "GOLD",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "ES",
+      "currency": "PEN"
+    },
+    "metadata": {
+      "acquisition_channel": "ORGANIC",
+      "lifetime_value": 6101.37,
+      "last_activity": "2025-06-13"
+    }
+  },
+  {
+    "customer_id": "CUST0098",
+    "personal_info": {
+      "first_name": "  Mónica  ",
+      "last_name": "Castro",
+      "full_name": "  Mónica   Castro",
+      "birth_date": "1980-05-13"
+    },
+    "contact": {
+      "email": "mónica.castro805@hotmail.com",
+      "phone": "+51-999-220660",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Ica",
+      "district": "Distrito 2",
+      "postal_code": "31499"
+    },
+    "registration_date": "2021-11-24",
+    "segment": "SILVER",
+    "status": "PENDING",
+    "preferences": {
+      "marketing_emails": true,
+      "language": "EN",
+      "currency": "EUR"
+    },
+    "metadata": {
+      "acquisition_channel": "ADVERTISING",
+      "lifetime_value": 214.51,
+      "last_activity": "2025-05-20"
+    }
+  },
+  {
+    "customer_id": "CUST0099",
+    "personal_info": {
+      "first_name": "Carmen",
+      "last_name": "Ramos",
+      "full_name": "Carmen Ramos",
+      "birth_date": "1971-12-05"
+    },
+    "contact": {
+      "email": "carmen.ramos992@yahoo.com",
+      "phone": "+51-999-323592",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Cajamarca",
+      "district": "Distrito 1",
+      "postal_code": "26075"
+    },
+    "registration_date": "2020-01-01",
+    "segment": "BRONZE",
+    "status": "INACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "REFERRAL",
+      "lifetime_value": 4432.9,
+      "last_activity": "2025-05-24"
+    }
+  },
+  {
+    "customer_id": "CUST0100",
+    "personal_info": {
+      "first_name": "PEDRO",
+      "last_name": "Vargas",
+      "full_name": "PEDRO Vargas",
+      "birth_date": "1979-10-28"
+    },
+    "contact": {
+      "email": "pedro.vargas566@hotmail.com",
+      "phone": "+51-999-590750",
+      "secondary_phone": null
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Talara",
+      "district": "Distrito 14",
+      "postal_code": "76278"
+    },
+    "registration_date": "2023-06-01",
+    "segment": "BRONZE",
+    "status": "ACTIVE",
+    "preferences": {
+      "marketing_emails": false,
+      "language": "ES",
+      "currency": "USD"
+    },
+    "metadata": {
+      "acquisition_channel": "ONLINE",
+      "lifetime_value": 3214.9,
+      "last_activity": "2025-07-04"
+    }
+  }
+]

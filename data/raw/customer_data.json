@@ -1,0 +1,87 @@
+[
+  {
+    "customer_id": "CUST001",
+    "personal_info": {
+      "first_name": "Juan Diego",
+      "last_name": "Gutiérrez"
+    },
+    "contact": {
+      "email": "juan.gutierrez@email.com",
+      "phone": "+51-999-123456"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Lima"
+    },
+    "registration_date": "2024-01-15",
+    "segment": "PREMIUM"
+  },
+  {
+    "customer_id": "CUST002",
+    "personal_info": {
+      "first_name": "María",
+      "last_name": "García"
+    },
+    "contact": {
+      "email": "maria.garcia@email.com",
+      "phone": "+51-999-654321"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Arequipa"
+    },
+    "registration_date": "2024-02-20",
+    "segment": "STANDARD"
+  },
+  {
+    "customer_id": "CUST003",
+    "personal_info": {
+      "first_name": "Carlos",
+      "last_name": "Rodriguez"
+    },
+    "contact": {
+      "email": "carlos.rodriguez@email.com",
+      "phone": "+51-999-789123"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Cusco"
+    },
+    "registration_date": "2024-03-10",
+    "segment": "PREMIUM"
+  },
+  {
+    "customer_id": "CUST004",
+    "personal_info": {
+      "first_name": "Ana",
+      "last_name": "López"
+    },
+    "contact": {
+      "email": "ana.lopez@email.com",
+      "phone": "+51-999-456789"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Trujillo"
+    },
+    "registration_date": "2024-04-05",
+    "segment": "GOLD"
+  },
+  {
+    "customer_id": "CUST005",
+    "personal_info": {
+      "first_name": "Luis",
+      "last_name": "Martínez"
+    },
+    "contact": {
+      "email": "luis.martinez@email.com",
+      "phone": "+51-999-321654"
+    },
+    "address": {
+      "country": "Peru",
+      "city": "Piura"
+    },
+    "registration_date": "2024-05-12",
+    "segment": "STANDARD"
+  }
+]

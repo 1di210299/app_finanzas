@@ -1,0 +1,51 @@
+product_code,product_name,category,subcategory,brand,unit_price,cost_price,weight_kg,dimensions,stock_quantity,supplier,created_date,status
+PROD0001,Standard Technical 130,Books,Technical,PremiumCo,1727.62,765.24,14.15,75x26x36cm,547,Supplier_2,2024-12-12,OUT_OF_STOCK
+PROD0002,Pro Kitchen 546,Home,Kitchen,TechCorp,2185.42,937.3,46.08,48x62x78cm,240,Supplier_2,2025-02-22,DISCONTINUED
+PROD0003,Advanced Kids 4615,Clothing,Kids,GlobalBrand,321.9,250.07,0.616,100x48x25cm,885,Supplier_15,2025-06-03,ACTIVE
+PROD0004,Basic Accessories 8429,Clothing,Accessories,ValueBrand,829.54,666.96,46.059,66x52x42cm,98,Supplier_18,2024-07-18,OUT_OF_STOCK
+PROD0005,Ultra Tools 1618,Home,Tools,LocalMaker,519.06,361.83,48.313,46x90x21cm,553,Supplier_17,2024-08-20,DISCONTINUED
+PROD0006,Pro Furniture 8876,Home,Furniture,TechCorp,1810.59,962.18,14.044,42x71x46cm,451,Supplier_1,2025-06-02,DISCONTINUED
+PROD0007,Standard Technical 2762,Books,Technical,TechCorp,2180.29,840.47,34.541,22x75x82cm,70,Supplier_14,2024-06-13,OUT_OF_STOCK
+PROD0008,Max Audio 7296,Electronics,Audio,TechCorp,282.56,198.92,49.442,51x14x77cm,688,Supplier_6,2023-10-25,DISCONTINUED
+PROD0009,Pro Cameras 9506,Electronics,Cameras,TechCorp,333.73,154.83,20.464,59x33x87cm,324,Supplier_4,2024-07-12,OUT_OF_STOCK
+PROD0010,Pro Educational 1451,Books,Educational,ValueBrand,1242.33,532.73,5.034,80x9x90cm,103,Supplier_16,2024-01-28,OUT_OF_STOCK
+PROD0011,Standard Men 5818,Clothing,Men,ValueBrand,1605.75,570.97,9.066,89x66x98cm,886,Supplier_3,2024-03-27,ACTIVE
+PROD0012,Ultra Educational 9580,Books,Educational,LocalMaker,950.72,648.04,21.48,14x7x16cm,68,Supplier_17,2025-05-01,OUT_OF_STOCK
+PROD0013,Premium Educational 3762,Books,Educational,GlobalBrand,411.18,205.35,37.628,60x100x34cm,668,Supplier_16,2024-11-26,ACTIVE
+PROD0014,Max Fiction 8860,Books,Fiction,PremiumCo,1642.74,583.37,7.582,22x28x64cm,927,Supplier_16,2024-05-11,DISCONTINUED
+PROD0015,Elite Non-Fiction 8119,Books,Non-Fiction,LocalMaker,1485.55,593.0,22.412,68x27x69cm,49,Supplier_2,2023-10-14,ACTIVE
+PROD0016,Premium Accessories 9600,Electronics,Accessories,PremiumCo,2780.89,998.21,25.634,40x88x60cm,662,Supplier_4,2024-11-19,ACTIVE
+PROD0017,Basic Shoes 3705,Clothing,Shoes,GlobalBrand,1998.41,826.15,34.117,40x48x74cm,491,Supplier_16,2024-03-08,DISCONTINUED
+PROD0018,Standard Cameras 4070,Electronics,Cameras,GlobalBrand,136.87,71.41,38.067,27x22x59cm,639,Supplier_4,2025-05-09,OUT_OF_STOCK
+PROD0019,Pro Accessories 6577,Electronics,Accessories,GlobalBrand,341.57,190.59,36.081,58x62x16cm,68,Supplier_17,2024-09-28,ACTIVE
+PROD0020,Advanced Shoes 8377,Clothing,Shoes,PremiumCo,568.09,236.0,27.891,92x60x82cm,923,Supplier_16,2024-12-17,ACTIVE
+PROD0021,Elite Tools 402,Home,Tools,PremiumCo,74.06,42.38,46.984,34x92x30cm,163,Supplier_1,2024-07-14,DISCONTINUED
+PROD0022,Ultra Tools 8966,Home,Tools,PremiumCo,520.32,284.16,35.909,10x83x38cm,531,Supplier_17,2025-02-25,ACTIVE
+PROD0023,Premium Team Sports 1433,Sports,Team Sports,ValueBrand,1755.97,785.91,31.052,85x90x51cm,367,Supplier_4,2023-10-22,OUT_OF_STOCK
+PROD0024,Standard Kids 7664,Clothing,Kids,GlobalBrand,1233.16,509.36,26.244,59x67x61cm,881,Supplier_4,2024-07-17,ACTIVE
+PROD0025,Max Fitness 8705,Sports,Fitness,TechCorp,1492.04,856.56,44.466,10x32x99cm,340,Supplier_11,2024-04-16,OUT_OF_STOCK
+PROD0026,Elite Kids 1104,Clothing,Kids,TechCorp,1206.09,551.51,3.1,13x34x86cm,844,Supplier_6,2025-03-08,ACTIVE
+PROD0027,Ultra Fiction 5949,Books,Fiction,PremiumCo,639.8,351.84,29.352,76x13x71cm,304,Supplier_2,2025-06-05,OUT_OF_STOCK
+PROD0028,Basic Tools 8296,Home,Tools,GlobalBrand,377.02,282.29,33.188,87x25x14cm,411,Supplier_8,2024-08-09,ACTIVE
+PROD0029,Standard Accessories 2676,Electronics,Accessories,ValueBrand,1403.81,861.17,26.789,94x72x87cm,236,Supplier_4,2024-03-27,ACTIVE
+PROD0030,Basic Water Sports 3388,Sports,Water Sports,GlobalBrand,990.06,364.11,2.445,38x6x99cm,445,Supplier_7,2024-07-27,ACTIVE
+PROD0031,Premium Water Sports 7556,Sports,Water Sports,ValueBrand,726.84,256.48,8.99,64x100x65cm,508,Supplier_3,2024-09-13,ACTIVE
+PROD0032,Basic Shoes 9095,Clothing,Shoes,LocalMaker,561.04,402.82,38.545,69x43x50cm,902,Supplier_18,2024-06-06,OUT_OF_STOCK
+PROD0033,Ultra Accessories 8169,Electronics,Accessories,GlobalBrand,2044.31,965.55,0.714,39x41x92cm,418,Supplier_4,2025-06-15,DISCONTINUED
+PROD0034,Ultra Fiction 9652,Books,Fiction,TechCorp,277.45,178.41,24.699,74x89x67cm,369,Supplier_1,2024-02-12,OUT_OF_STOCK
+PROD0035,Elite Furniture 538,Home,Furniture,ValueBrand,486.75,219.28,39.466,22x65x46cm,599,Supplier_6,2023-10-21,OUT_OF_STOCK
+PROD0036,Max Non-Fiction 2463,Books,Non-Fiction,GlobalBrand,710.3,539.27,15.824,46x25x27cm,170,Supplier_12,2023-09-04,DISCONTINUED
+PROD0037,Premium Accessories 2259,Electronics,Accessories,PremiumCo,421.3,159.26,9.089,56x34x9cm,286,Supplier_3,2023-12-17,OUT_OF_STOCK
+PROD0038,Basic Team Sports 2379,Sports,Team Sports,LocalMaker,1745.16,594.62,49.509,24x79x100cm,849,Supplier_11,2025-03-02,DISCONTINUED
+PROD0039,Elite Outdoor 4089,Sports,Outdoor,TechCorp,420.46,159.82,30.703,72x47x12cm,771,Supplier_18,2024-05-02,DISCONTINUED
+PROD0040,Elite Water Sports 6550,Sports,Water Sports,TechCorp,1418.82,819.87,46.125,52x56x15cm,321,Supplier_5,2024-06-08,OUT_OF_STOCK
+PROD0041,Basic Cameras 4607,Electronics,Cameras,GlobalBrand,1411.57,724.76,41.168,48x95x84cm,549,Supplier_16,2024-06-17,OUT_OF_STOCK
+PROD0042,Max Outdoor 4953,Sports,Outdoor,PremiumCo,637.47,434.64,8.557,63x81x79cm,850,Supplier_4,2024-03-25,ACTIVE
+PROD0043,Advanced Outdoor 3983,Sports,Outdoor,PremiumCo,1519.05,589.13,25.513,70x59x11cm,252,Supplier_1,2025-01-05,DISCONTINUED
+PROD0044,Standard Accessories 4599,Clothing,Accessories,PremiumCo,1404.67,728.63,39.66,49x79x22cm,627,Supplier_17,2023-10-09,DISCONTINUED
+PROD0045,Standard Decor 7173,Home,Decor,ValueBrand,400.87,246.9,16.195,87x58x16cm,348,Supplier_5,2025-01-19,ACTIVE
+PROD0046,Max Educational 325,Books,Educational,ValueBrand,1474.85,595.14,25.415,60x16x54cm,824,Supplier_17,2023-10-25,OUT_OF_STOCK
+PROD0047,Advanced Tools 2607,Home,Tools,LocalMaker,2391.23,909.64,11.866,82x67x16cm,150,Supplier_15,2023-08-12,OUT_OF_STOCK
+PROD0048,Elite Men 436,Clothing,Men,GlobalBrand,599.12,337.16,27.646,18x13x86cm,962,Supplier_2,2025-04-29,ACTIVE
+PROD0049,Max Educational 5615,Books,Educational,ValueBrand,830.11,364.69,1.276,64x67x21cm,433,Supplier_6,2023-07-24,ACTIVE
+PROD0050,Basic Laptops 7724,Electronics,Laptops,TechCorp,1848.95,724.28,48.13,58x48x58cm,565,Supplier_14,2024-05-05,DISCONTINUED

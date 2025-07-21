@@ -1,0 +1,11 @@
+supplier_id,company_name,contact_person,email,phone,country,city,rating,contract_start,payment_terms
+SUP001,Supplier Company 1,Pedro Guerrero,contact1@supplier1.com,+51-973-633300,Germany,Pucallpa,3.2,2024-02-09,NET_30
+SUP002,Supplier Company 2,Andrés Jiménez,contact2@supplier2.com,+51-925-773171,China,Ica,2.8,2024-05-03,NET_30
+SUP003,Supplier Company 3,Isabel Flores,contact3@supplier3.com,+51-974-225708,Germany,Puno,1.0,2023-10-25,PREPAID
+SUP004,Supplier Company 4,Roberto Ruiz,contact4@supplier4.com,+51-920-928313,USA,Chimbote,3.7,2024-07-11,NET_60
+SUP005,Supplier Company 5,Isabel Guerrero,contact5@supplier5.com,+51-979-639501,Brazil,Sullana,3.1,2024-06-10,NET_60
+SUP006,Supplier Company 6,Juan Gutiérrez,contact6@supplier6.com,+51-941-680621,Brazil,Juliaca,4.8,2025-02-04,COD
+SUP007,Supplier Company 7,Roberto Sánchez,contact7@supplier7.com,+51-957-713113,Brazil,Chincha,1.5,2025-01-24,PREPAID
+SUP008,Supplier Company 8,Sofía Vásquez,contact8@supplier8.com,+51-907-224592,China,Trujillo,3.1,2023-02-27,NET_30
+SUP009,Supplier Company 9,Silvia Paredes,contact9@supplier9.com,+51-984-540624,Brazil,Puno,4.9,2023-09-29,NET_30
+SUP010,Supplier Company 10,Victoria Pérez,contact10@supplier10.com,+51-951-283013,China,Juliaca,4.5,2022-08-08,PREPAID

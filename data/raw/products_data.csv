@@ -1,0 +1,6 @@
+product_code,product_name,category,subcategory,brand,unit_price,cost_price,weight_kg
+PROD001,MacBook Pro M3,Electronics,Computers,Apple,999.99,750.00,2.0
+PROD002,Magic Mouse,Electronics,Accessories,Apple,15.50,10.00,0.2
+PROD003,Mechanical Keyboard,Electronics,Accessories,Logitech,45.00,30.00,1.2
+PROD004,Studio Display,Electronics,Displays,Apple,299.99,200.00,5.8
+PROD005,AirPods Pro,Electronics,Audio,Apple,65.50,40.00,0.1

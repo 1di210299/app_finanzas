@@ -1,0 +1,35 @@
+{
+  "data_quality_cases": {
+    "sales_data": {
+      "duplicates": "5% de transacciones con IDs duplicados",
+      "null_values": "5% de registros con campos nulos/vacíos",
+      "date_formats": "5% de fechas en formatos inconsistentes (DD/MM/YYYY, MM-DD-YYYY, YYYYMMDD)",
+      "invalid_prices": "2% de precios inválidos (negativos, cero, extremos)",
+      "encoding_issues": "Acentos y caracteres especiales en texto"
+    },
+    "customer_data": {
+      "name_formatting": "5% de nombres en formatos inconsistentes (mayúsculas, minúsculas, espacios)",
+      "duplicate_emails": "3% de emails duplicados",
+      "phone_formats": "10% de teléfonos en formatos inconsistentes",
+      "missing_data": "Campos opcionales con valores nulos"
+    },
+    "product_data": {
+      "pricing_logic": "2% de productos con costos mayores al precio de venta",
+      "zero_prices": "Algunos productos con precio 0",
+      "category_consistency": "Productos bien categorizados para testing"
+    }
+  },
+  "data_volumes": {
+    "small_dataset": "50-100 registros para pruebas rápidas",
+    "medium_dataset": "500-1000 registros para testing normal",
+    "large_dataset": "5000+ registros para pruebas de rendimiento"
+  },
+  "business_logic": {
+    "relationships": "Claves foráneas consistentes entre tablas",
+    "temporal_data": "Fechas en rangos lógicos (últimos 3 años)",
+    "geographical": "Ciudades reales de Perú",
+    "segments": "Segmentación de clientes realista"
+  },
+  "generation_timestamp": "2025-07-19T18:53:27.465258",
+  "purpose": "Datos generados para evaluación de pipeline ETL"
+}

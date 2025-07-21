@@ -1,0 +1,16 @@
+product_code,product_name,category,subcategory,brand,unit_price,cost_price,weight_kg,dimensions,stock_quantity,supplier,created_date,status
+PROD0001,Premium Fiction 4512,Books,Fiction,PremiumCo,187.05,131.71,13.923,96x48x57cm,669,Supplier_4,2024-07-16,ACTIVE
+PROD0002,Basic Tools 2351,Home,Tools,GlobalBrand,517.94,295.24,49.614,27x33x11cm,311,Supplier_7,2024-04-10,DISCONTINUED
+PROD0003,Max Fiction 6885,Books,Fiction,GlobalBrand,628.93,287.73,12.848,100x85x65cm,515,Supplier_9,2025-05-03,OUT_OF_STOCK
+PROD0004,Ultra Garden 1669,Home,Garden,LocalMaker,1400.82,936.02,47.823,65x14x51cm,306,Supplier_12,2024-04-08,DISCONTINUED
+PROD0005,Standard Fiction 4172,Books,Fiction,GlobalBrand,301.79,202.74,9.558,78x41x20cm,964,Supplier_2,2024-01-28,DISCONTINUED
+PROD0006,Elite Educational 3565,Books,Educational,LocalMaker,1311.66,645.81,3.088,46x68x97cm,130,Supplier_20,2024-07-19,OUT_OF_STOCK
+PROD0007,Pro Accessories 6949,Clothing,Accessories,PremiumCo,770.31,522.75,40.942,76x93x85cm,72,Supplier_17,2025-03-02,DISCONTINUED
+PROD0008,Ultra Team Sports 4149,Sports,Team Sports,LocalMaker,908.35,615.91,4.234,35x55x72cm,324,Supplier_17,2025-05-13,OUT_OF_STOCK
+PROD0009,Ultra Technical 3538,Books,Technical,GlobalBrand,2165.46,803.51,45.497,49x75x55cm,605,Supplier_2,2024-10-04,OUT_OF_STOCK
+PROD0010,Advanced Furniture 9720,Home,Furniture,PremiumCo,0,479.26,34.0,61x100x25cm,130,Supplier_11,2025-01-17,ACTIVE
+PROD0011,Elite Accessories 5714,Clothing,Accessories,ValueBrand,833.77,646.73,10.363,19x39x87cm,732,Supplier_20,2025-04-24,DISCONTINUED
+PROD0012,Basic Non-Fiction 7540,Books,Non-Fiction,LocalMaker,186.62,102.36,19.346,9x57x43cm,119,Supplier_8,2023-09-26,OUT_OF_STOCK
+PROD0013,Elite Water Sports 9913,Sports,Water Sports,LocalMaker,684.67,246.9,11.183,82x6x66cm,819,Supplier_2,2024-09-13,ACTIVE
+PROD0014,Max Accessories 1042,Clothing,Accessories,TechCorp,1055.85,352.44,12.843,18x38x91cm,334,Supplier_13,2024-03-27,DISCONTINUED
+PROD0015,Standard Cameras 314,Electronics,Cameras,PremiumCo,650.96,409.63,25.018,99x12x39cm,783,Supplier_9,2025-01-25,ACTIVE

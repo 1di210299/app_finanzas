@@ -1,0 +1,45 @@
+# Logs
+data/logs/*
+!data/logs/.gitkeep
+
+# Datos procesados
+data/processed/*
+!data/processed/.gitkeep
+
+# Configuración local
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Docker
+.docker/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Airflow
+airflow.cfg
+airflow.db
+webserver_config.py
+.venv
+# Jupyter
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
